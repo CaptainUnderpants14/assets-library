@@ -5,6 +5,7 @@ import { brandIcons } from "./maps/brandMap";
 import { businessIcons } from "./maps/businessMap";
 import { devIcons } from "./maps/devMap";
 import { schoolIcons } from "./maps/educationMap";
+import { electronicsIcons } from "./maps/electronicsMap";
 import { fashionIcons } from "./maps/fashionMap";
 import { foodIcons } from "./maps/foodMap";
 // import { emojiIcons } from "./maps/emojiMap";
@@ -28,5 +29,7 @@ export const iconMap = {
   fashion: fashionIcons,
   time: timeIcons,
   food: foodIcons,
-  school: schoolIcons
+  school: schoolIcons,
+  electronic: electronicsIcons
 };
+

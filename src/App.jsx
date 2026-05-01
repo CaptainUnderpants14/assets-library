@@ -12,6 +12,7 @@ import { fashionIcons } from "./my-icons/maps/fashionMap";
 import { timeIcons } from "./my-icons/maps/timeMap";
 import { foodIcons } from "./my-icons/maps/foodMap";
 import { schoolIcons } from "./my-icons/maps/educationMap";
+import { electronicsIcons } from "./my-icons/maps/electronicsMap";
 
 //Section Renderer
 const Section = ({ title, icons, group }) => (
@@ -52,6 +53,7 @@ function App() {
     { title: "Date & Time", icons: timeIcons, group: "time" },
     { title: "Food", icons: foodIcons, group: "food" },
     { title: "Education", icons: schoolIcons, group: "school" },
+    { title: "Electronics", icons: electronicsIcons, group: "electronic" },
   ];
 
   const sortedSections = [...sections].sort((a, b) =>

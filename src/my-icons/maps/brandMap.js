@@ -1,24 +1,7 @@
+// ================= IMPORTS =================
 import {
-  FaInstagram,
-  FaFacebook,
-  FaTwitter,
-  FaYoutube,
-  FaLinkedin,
-  FaGithub,
-  FaGoogle,
-  FaDiscord,
-  FaSnapchatGhost,
-  FaPinterest,
-  FaReddit,
-  FaWhatsapp,
-  FaTelegram,
-  FaTiktok
-} from "react-icons/fa";
-
-import {
-  SiX,            // Twitter/X (new logo)
+  SiX,
   SiGoogle,
-//   SiLinkedin,
   SiGithub,
   SiInstagram,
   SiFacebook,
@@ -28,43 +11,68 @@ import {
   SiReddit,
   SiWhatsapp,
   SiTelegram,
-  SiSnapchat
+  SiSnapchat,
+  SiPinterest,
+  SiLine,
+  SiViber,
+  SiSignal,
+  SiMessenger,
+  SiSlack,
+  SiThreads,
+  SiMastodon,
+  SiTwitch,
+  SiFlickr,
+  SiImgur,
+  SiQuora,
+  SiZoom,
+  SiGooglemeet,
 } from "react-icons/si";
 
-// Brand / Platform icons
+import { FaLinkedin, FaLinkedinIn, FaMedium, FaGoogle  } from "react-icons/fa";
+
+// ================= MAP =================
 export const brandIcons = {
-  // 📸 Social media
-  instagram: FaInstagram,
-  facebook: FaFacebook,
-  twitter: FaTwitter,     // legacy twitter
-  x: SiX,                 // new Twitter/X
-  youtube: FaYoutube,
-  linkedin: FaLinkedin,
-  tiktok: FaTiktok,
-  snapchat: FaSnapchatGhost,
-  reddit: FaReddit,
-  pinterest: FaPinterest,
+  // ================= 💬 Messaging =================
+  whatsapp: SiWhatsapp,
+  telegram: SiTelegram,
+  signal: SiSignal,
+  messenger: SiMessenger,
+  line: SiLine,
+  viber: SiViber,
+  discord: SiDiscord,
+  slack: SiSlack,
+  snapchat: SiSnapchat,
 
-  // 💬 Messaging
-  whatsapp: FaWhatsapp,
-  telegram: FaTelegram,
-  discord: FaDiscord,
+  // ================= 🌐 Social =================
+  facebook: SiFacebook,
+  instagram: SiInstagram,
+  x: SiX,
+  tiktok: SiTiktok,
+  pinterest: SiPinterest,
+  reddit: SiReddit,
+  threads: SiThreads,
+  mastodon: SiMastodon,
 
-  // 🧑‍💻 Dev / Auth
-  github: FaGithub,
-  google: FaGoogle,
+  // ================= 🎥 Streaming =================
+  youtube: SiYoutube,
+  twitch: SiTwitch,
 
-  // 🔁 Alternative (Simple Icons - cleaner logos)
-  googleAlt: SiGoogle,
-  githubAlt: SiGithub,
-//   linkedinAlt: SiLinkedin,
-  instagramAlt: SiInstagram,
-  facebookAlt: SiFacebook,
-  youtubeAlt: SiYoutube,
-  discordAlt: SiDiscord,
-  tiktokAlt: SiTiktok,
-  redditAlt: SiReddit,
-  whatsappAlt: SiWhatsapp,
-  telegramAlt: SiTelegram,
-  snapchatAlt: SiSnapchat
+  // ================= 📸 Media =================
+  flickr: SiFlickr,
+  imgur: SiImgur,
+
+  // ================= 🧠 Content / Forums =================
+  quora: SiQuora,
+  medium: FaMedium,
+
+  // ================= 💼 Professional =================
+  zoom: SiZoom,
+  linkedIn: FaLinkedinIn,
+  linkedInAlt: FaLinkedin,
+  googleMeet: SiGooglemeet,
+
+  // ================= 🧑‍💻 Dev/Auth =================
+  github: SiGithub,
+  google: SiGoogle,
+  googleAlt: FaGoogle
 };
