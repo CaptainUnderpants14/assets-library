@@ -31,7 +31,7 @@ import {
   WiFog,
   WiDust,
   WiSmoke,
-  WiDayHaze, 
+  WiDayHaze,
 
   WiStrongWind,
   WiWindy,
@@ -41,15 +41,16 @@ import {
   WiSunset,
 
   WiMoonFull,
-//   WiMoonWaxingCrescent,
-//   WiMoonWaxingGibbous,
-//   WiMoonWaningCrescent,
-//   WiMoonWaningGibbous,
   WiMoonFirstQuarter,
-  WiMoonThirdQuarter
+  WiMoonThirdQuarter,
+
+  // Only NEW ones here
+  WiSolarEclipse,
+  WiLunarEclipse,
+  WiStars,
 } from "react-icons/wi";
 
-// Expanded weather icons map
+// Expanded weather + celestial icons map
 export const weatherIcons = {
   // Day
   sunny: WiDaySunny,
@@ -102,10 +103,13 @@ export const weatherIcons = {
 
   // Moon phases
   moonFull: WiMoonFull,
-//   moonWaxingCrescent: WiMoonWaxingCrescent,
-//   moonWaxingGibbous: WiMoonWaxingGibbous,
-//   moonWaningCrescent: WiMoonWaningCrescent,
-//   moonWaningGibbous: WiMoonWaningGibbous,
   moonFirstQuarter: WiMoonFirstQuarter,
-  moonThirdQuarter: WiMoonThirdQuarter
+  moonThirdQuarter: WiMoonThirdQuarter,
+
+  // 🌌 Celestial entities
+  sun: WiDaySunny,
+  moon: WiNightClear,
+  stars: WiStars,
+  solarEclipse: WiSolarEclipse,
+  lunarEclipse: WiLunarEclipse,
 };
