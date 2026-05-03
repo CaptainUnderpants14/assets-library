@@ -1,5 +1,0 @@
-Three parameters group, name and size,
-If size is not mentioned then size is automatically set to md which is 20px.
-
-example:
-<Icon group="business" name="chartLine" size={50} />

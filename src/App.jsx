@@ -41,8 +41,7 @@ const Section = ({ title, icons, group }) => (
                      hover:border-blue-300
                      hover:shadow-md
                      transition-all duration-200
-                     cursor-pointer"
-        >
+                     cursor-pointer">
           <Icon group={group} name={key} size={26} />
         </div>
       ))}
@@ -96,7 +95,10 @@ function App() {
         </div>
       </div>
 
-      {/* <Icon group="business" name="chartLine" size="xl" /> */}
+      <Icon className="business_chartLine hover:scale-110 transition duration-500" size={40}/>
+      <Icon className="business_chartLine_40 text-red-500" />
+      <Icon className="business_chartLine_lg text-blue-500" />
+      <Icon className="business_chartLine text-green-500" />
 
       {/* RIGHT SIDEBAR */}
       <div className="w-64 border-l border-gray-200 p-6 sticky top-0 h-screen bg-white">
@@ -110,8 +112,7 @@ function App() {
               key={section.title}
               className="text-gray-500 hover:text-blue-600 
                          hover:font-medium 
-                         cursor-pointer text-sm transition"
-            >
+                         cursor-pointer text-sm transition">
               {section.title}
             </div>
           ))}

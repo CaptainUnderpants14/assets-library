@@ -23,7 +23,6 @@ import {
 } from "react-icons/md";
 
 import {
-  AiFillAlert,
   AiFillWarning,
   AiOutlineExclamationCircle,
   AiOutlineInfoCircle,
