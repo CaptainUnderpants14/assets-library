@@ -31,7 +31,7 @@ import {
 import { FaLinkedin, FaLinkedinIn, FaMedium, FaGoogle  } from "react-icons/fa";
 
 // ================= MAP =================
-export const brandIcons = {
+export const appsIcons = {
   // ================= 💬 Messaging =================
   whatsapp: SiWhatsapp,
   telegram: SiTelegram,
@@ -70,8 +70,6 @@ export const brandIcons = {
   linkedIn: FaLinkedinIn,
   linkedInAlt: FaLinkedin,
   googleMeet: SiGooglemeet,
-
-  // ================= 🧑‍💻 Dev/Auth =================
   github: SiGithub,
   google: SiGoogle,
   googleAlt: FaGoogle

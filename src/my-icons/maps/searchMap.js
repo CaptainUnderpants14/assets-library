@@ -8,6 +8,8 @@ import {
   FaSortDown
 } from "react-icons/fa";
 
+import {TbSortAscending, TbSortDescending} from "react-icons/tb"
+
 import {
   MdSearch,
   MdFilterList,
@@ -56,6 +58,8 @@ export const searchIcons = {
   // ↕️ Sorting
   sort: FaSort,
   sortAsc: FaSortUp,
+  sortAscAlt2: TbSortAscending,
+  sortDescAlt2: TbSortDescending,
   sortDesc: FaSortDown,
   sortMd: MdSort,
   sortAscAlt: AiOutlineSortAscending,

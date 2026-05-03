@@ -1,4 +1,6 @@
+// ================= IMPORTS =================
 import {
+  // Weather Icons (wi) - Most comprehensive set
   WiDaySunny,
   WiDayCloudy,
   WiDayCloudyHigh,
@@ -6,110 +8,187 @@ import {
   WiDayThunderstorm,
   WiDaySnow,
   WiDayFog,
-
   WiNightClear,
   WiNightAltCloudy,
   WiNightAltRain,
   WiNightAltThunderstorm,
   WiNightAltSnow,
-
   WiCloud,
   WiCloudy,
   WiCloudyGusts,
   WiCloudyWindy,
-
   WiRain,
   WiRainMix,
   WiShowers,
   WiStormShowers,
   WiThunderstorm,
-
   WiSnow,
   WiSnowWind,
   WiSleet,
-
   WiFog,
   WiDust,
   WiSmoke,
   WiDayHaze,
-
   WiStrongWind,
   WiWindy,
   WiHumidity,
-
   WiSunrise,
   WiSunset,
-
   WiMoonFull,
   WiMoonFirstQuarter,
   WiMoonThirdQuarter,
-
-  // Only NEW ones here
   WiSolarEclipse,
   WiLunarEclipse,
   WiStars,
 } from "react-icons/wi";
 
-// Expanded weather + celestial icons map
+import {
+  // Game Icons (gi) - Stylized/dramatic alternatives
+  GiTornado,
+  GiVolcano,
+  GiLava,
+  GiFire,
+  GiWaterSplash,
+  GiWaveSurfer,
+  GiEarthCrack,
+  GiIceberg,
+  GiSnowflake2,
+  GiWindSlap,
+  GiSun,
+  GiMoon,
+  GiCometSpark,
+  GiBlackHoleBolas,
+} from "react-icons/gi";
+
+import {
+  // Font Awesome (fa) - Clean alternatives
+  FaCloudSun,
+  FaCloudRain,
+  FaWind,
+  FaWater,
+  FaFire,
+  FaTemperatureHigh,
+  FaTemperatureLow,
+  FaSmog,
+} from "react-icons/fa";
+
+import {
+  // Material Icons (md)
+  MdStorm,
+  MdFlood,
+  MdOutlineWaves,
+  MdGrain,
+  MdSunny,
+} from "react-icons/md";
+
+import {
+  // Tabler (tb)
+  TbWaveSine,
+  TbWind,
+  TbTemperature,
+} from "react-icons/tb";
+
+// ================= MAP =================
 export const weatherIcons = {
-  // Day
+  // ================= ☀️ DAY WEATHER =================
   sunny: WiDaySunny,
+  sunnyAlt: MdSunny,
+  sunnySunrise: WiSunrise,
+  sunnySunset: WiSunset,
   partlyCloudyDay: WiDayCloudy,
+  partlyCloudyDayAlt: FaCloudSun,
   mostlyCloudyDay: WiDayCloudyHigh,
   dayRain: WiDayRain,
   dayThunder: WiDayThunderstorm,
   daySnow: WiDaySnow,
   dayFog: WiDayFog,
 
-  // Night
+  // ================= 🌙 NIGHT WEATHER =================
   clearNight: WiNightClear,
   partlyCloudyNight: WiNightAltCloudy,
   nightRain: WiNightAltRain,
   nightThunder: WiNightAltThunderstorm,
   nightSnow: WiNightAltSnow,
 
-  // Clouds
+  // ================= ☁️ CLOUDS =================
   cloudy: WiCloud,
   overcast: WiCloudy,
   gustyClouds: WiCloudyGusts,
   windyClouds: WiCloudyWindy,
 
-  // Rain & Storm
+  // ================= 🌧️ PRECIPITATION =================
   rain: WiRain,
+  rainAlt: WiDayRain,
   mixedRain: WiRainMix,
   showers: WiShowers,
   stormShowers: WiStormShowers,
-  thunderstorm: WiThunderstorm,
+  drizzle: FaCloudRain,
 
-  // Snow & Ice
+  // ================= ⛈️ THUNDERSTORMS =================
+  thunderstorm: WiThunderstorm,
+  thunderstormAlt: WiDayThunderstorm,
+
+  // ================= ❄️ SNOW & ICE =================
   snow: WiSnow,
+  snowAlt: WiDaySnow,
   snowWind: WiSnowWind,
   sleet: WiSleet,
+  snowflake: GiSnowflake2,
+  iceberg: GiIceberg,
+  avalanche: GiSnowflake2,
 
-  // Atmosphere
-  fog: WiFog,
-  dust: WiDust,
-  smoke: WiSmoke,
-  haze: WiDayHaze,
-
-  // Wind & Air
+  // ================= 💨 WIND & AIR =================
   wind: WiStrongWind,
+  windAlt: GiWindSlap,
+  breeze: FaWind,
+  gust: TbWind,
   windy: WiWindy,
   humidity: WiHumidity,
 
-  // Sun phases
-  sunrise: WiSunrise,
-  sunset: WiSunset,
+  // ================= 🌫️ ATMOSPHERE =================
+  fog: WiFog,
+  dust: WiDust,
+  sandstorm: MdGrain,
+  smoke: WiSmoke,
+  haze: WiDayHaze,
+  hazeFog: FaSmog,
 
-  // Moon phases
+  // ================= 🌪️ SEVERE WEATHER / STORMS =================
+  tornado: GiTornado,
+  cyclone: MdStorm,
+
+
+  // ================= 🌊 WATER EVENTS =================
+  flood: MdFlood,
+  waves: MdOutlineWaves,
+  water: FaWater,
+  waterSplash: GiWaterSplash,
+  ripple: TbWaveSine,
+
+  // ================= 🌋 GEOLOGICAL =================
+  earthquake: GiEarthCrack,
+  volcano: GiVolcano,
+  lava: GiLava,
+
+  // ================= 🔥 FIRE & HEAT =================
+  fire: FaFire,
+  fireAlt: GiFire,
+  heatwave: FaTemperatureHigh,
+
+  // ================= 🌡️ TEMPERATURE =================
+  temperature: TbTemperature,
+  hot: GiSun,
+  cold: FaTemperatureLow,
+
+  // ================= 🌌 CELESTIAL / SPACE =================
+  moon: WiNightClear,
+  moonAlt: GiMoon,
   moonFull: WiMoonFull,
   moonFirstQuarter: WiMoonFirstQuarter,
   moonThirdQuarter: WiMoonThirdQuarter,
-
-  // 🌌 Celestial entities
-  sun: WiDaySunny,
-  moon: WiNightClear,
   stars: WiStars,
   solarEclipse: WiSolarEclipse,
   lunarEclipse: WiLunarEclipse,
+  comet: GiCometSpark,
+  blackHole: GiBlackHoleBolas,
 };
