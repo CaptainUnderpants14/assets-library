@@ -7,11 +7,17 @@ export default defineConfig({
     lib: {
       entry: "src/index.js",
       name: "AssetsLibrary",
-      formats: ["es", "cjs"], // 🔥 important
-      fileName: (format) => `index.${format}.js`
+      formats: ["es"],
+      fileName: "index"
     },
     rollupOptions: {
       external: ["react", "react-dom"],
-    },
-  },
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM"
+        }
+      }
+    }
+  }
 });

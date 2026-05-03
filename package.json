@@ -3,20 +3,19 @@
   "version": "1.0.0",
   "type": "module",
 
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.cjs.js"
-    }
+    ".": "./dist/index.js"
+  },
+
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
   },
 
   "files": ["dist"],
-
-  "scripts": {
-    "build": "vite build"
-  },
 
   "peerDependencies": {
     "react": "^18 || ^19",
@@ -25,10 +24,5 @@
 
   "dependencies": {
     "react-icons": "^5.6.0"
-  },
-
-  "devDependencies": {
-    "vite": "^8.0.10",
-    "@vitejs/plugin-react": "^6.0.1"
   }
 }
