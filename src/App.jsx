@@ -1,122 +1,94 @@
 import { Icon } from ".";
 
-import { weatherIcons } from "./my-icons/maps/weatherMap";
-import { alertIcons } from "./my-icons/maps/alertMap";
-import { searchIcons } from "./my-icons/maps/searchMap";
-import { actionIcons } from "./my-icons/maps/actionMap";
-import { uiIconsMap } from "./my-icons/maps/uiIconsMap";
-import { appsIcons } from "./my-icons/maps/appsMap";
-import { awardIcons } from "./my-icons/maps/awardmap";
-import { businessIcons } from "./my-icons/maps/businessMap";
-import { devIcons } from "./my-icons/maps/devMap";
-import { fashionIcons } from "./my-icons/maps/fashionMap";
-import { timeIcons } from "./my-icons/maps/timeMap";
-import { foodIcons } from "./my-icons/maps/foodMap";
-import { schoolIcons } from "./my-icons/maps/educationMap";
-import { electronicsIcons } from "./my-icons/maps/electronicsMap";
-import { brandsIcons } from "./my-icons/maps/brandingMap";
-import { gameIcons } from "./my-icons/maps/gameMap";
-import { commerceIcons } from "./my-icons/maps/commerceMap";
-import { toolsIcons } from "./my-icons/maps/toolsMap";
-import { legalIcons } from "./my-icons/maps/officialMap";
-import { medicalIcons } from "./my-icons/maps/medicalMap";
-import { cursorIcons } from "./my-icons/maps/cursorMap";
-import { shapesIcons } from "./my-icons/maps/shapesMap";
+const sectionTitleStyle = "text-xl font-semibold text-slate-800";
+const rowStyle = "flex flex-wrap items-center gap-4 rounded-lg border border-slate-200 bg-white p-4";
 
-// SECTION
-const Section = ({ title, icons, group }) => (
-  <div className="mb-12">
-    <h2 className="text-xl font-semibold text-gray-800 mb-6">
-      {title}
-    </h2>
-
-    <div className="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-4">
-      {Object.keys(icons).map((key) => (
-        <div
-          key={key}
-          className="bg-white border border-gray-200
-                     rounded-xl 
-                     flex items-center justify-center 
-                     h-16 w-16
-                     hover:border-blue-300
-                     hover:shadow-md
-                     transition-all duration-200
-                     cursor-pointer">
-          <Icon group={group} name={key} size={26} />
-        </div>
-      ))}
-    </div>
-  </div>
-);
+const iconExamples = [
+  {
+    title: "Props Usage (No Tailwind)",
+    items: [
+      <Icon key="business-default" group="business" name="chartLine" />,
+      <Icon key="business-size-number" group="business" name="chartLine" size={50} />,
+      <Icon key="business-size-lg" group="business" name="chartLine" size="lg" />,
+      <Icon key="business-color" group="business" name="chartLine" color="red" />,
+      <Icon key="action-add" group="action" name="add" size={34} />,
+      <Icon key="alert-warning" group="alert" name="warning" size={34} color="orange" />,
+      <Icon key="weather-sunny" group="weather" name="sunny" size={36} color="goldenrod" />,
+      <Icon key="medical-heart" group="medical" name="heart" size={34} color="crimson" />,
+    ],
+  },
+  {
+    title: "ClassName DSL (Tailwind)",
+    items: [
+      <Icon key="dsl-business" className="business_chartLine" />,
+      <Icon key="dsl-business-blue" className="business_chartLine_40 text-blue-500" />,
+      <Icon key="dsl-business-green" className="business_chartLine_lg text-green-500 hover:scale-110 transition" />,
+      <Icon key="dsl-weather" className="weather_sunny_40 text-yellow-500" />,
+      <Icon key="dsl-alert" className="alert_warning_40 text-orange-500" />,
+      <Icon key="dsl-ui" className="uiIcons_like_40 text-pink-500 hover:scale-110 transition" />,
+      <Icon key="dsl-dev" className="dev_react_40 text-cyan-500" />,
+      <Icon key="dsl-brand" className="brand_google_40 text-emerald-600" />,
+    ],
+  },
+  {
+    title: "Mixed Usage",
+    items: [
+      <Icon key="mixed-business" className="business_chartLine" size={60} />,
+      <Icon key="mixed-business-xl" className="business_chartLine_40 text-cyan-500" size="xl" />,
+      <Icon key="mixed-business-color" className="business_chartLine text-purple-500" color="orange" />,
+      <Icon key="mixed-food" className="food_pizza_40 text-rose-500" size="lg" />,
+      <Icon key="mixed-tools" className="tools_wrench_40 text-slate-700" color="seagreen" />,
+      <Icon key="mixed-cursor" className="cursor_click_40 text-indigo-500" size={42} />,
+    ],
+  },
+  {
+    title: "More Library Groups",
+    items: [
+      <Icon key="apps-google" group="app" name="google" size={34} />,
+      <Icon key="award-trophy" group="award" name="trophy" size={34} color="goldenrod" />,
+      <Icon key="commerce-cart" group="commerce" name="cart" size={34} />,
+      <Icon key="dev-react" group="dev" name="react" size={34} color="#61dafb" />,
+      <Icon key="fashion-shirt" group="fashion" name="shirt" size={34} />,
+      <Icon key="food-coffee" group="food" name="coffee" size={34} color="#8b5e3c" />,
+      <Icon key="game-controller" group="game" name="gamePad" size={34} />,
+      <Icon key="official-gavel" group="official" name="gavel" size={34} />,
+      <Icon key="search-filter" group="search" name="filter" size={34} />,
+      <Icon key="shapes-circle" group="shapes" name="circle" size={34} />,
+      <Icon key="time-clock" group="time" name="clock" size={34} />,
+      <Icon key="electronic-laptop" group="electronic" name="laptop" size={34} />,
+    ],
+  },
+];
 
 function App() {
-  const sections = [
-    { title: "Weather", icons: weatherIcons, group: "weather" },
-    { title: "Alerts", icons: alertIcons, group: "alert" },
-    { title: "Search", icons: searchIcons, group: "search" },
-    { title: "CRUD", icons: actionIcons, group: "action" },
-    { title: "UI", icons: uiIconsMap, group: "uiIcons" },
-    { title: "Apps", icons: appsIcons, group: "app" },
-    { title: "Awards", icons: awardIcons, group: "award" },
-    { title: "Business", icons: businessIcons, group: "business" },
-    { title: "Developer", icons: devIcons, group: "dev" },
-    { title: "Fashion", icons: fashionIcons, group: "fashion" },
-    { title: "Time", icons: timeIcons, group: "time" },
-    { title: "Food", icons: foodIcons, group: "food" },
-    { title: "Education", icons: schoolIcons, group: "school" },
-    { title: "Electronics", icons: electronicsIcons, group: "electronic" },
-    { title: "Brands", icons: brandsIcons, group: "brand" },
-    { title: "Games", icons: gameIcons, group: "game" },
-    { title: "Commerce", icons: commerceIcons, group: "commerce" },
-    { title: "Tools", icons: toolsIcons, group: "tools" },
-    { title: "Officials", icons: legalIcons, group: "official" },
-    { title: "Medical", icons: medicalIcons, group: "medical" },
-    { title: "Cursor", icons: cursorIcons, group: "cursor" },
-    { title: "Shapes", icons: shapesIcons, group: "shapes" },
-  ];
-
-  const sortedSections = [...sections].sort((a, b) =>
-    a.title.localeCompare(b.title)
-  );
-
   return (
-    <div className="min-h-screen flex bg-blue-100/70">
-      {/* MAIN CONTENT */}
-      <div className="flex-1 p-8 overflow-y-auto">
-        <div className="max-w-7xl mx-auto">
-          {sortedSections.map((section) => (
-            <Section
-              key={section.title}
-              title={section.title}
-              icons={section.icons}
-              group={section.group}
-            />
-          ))}
+    <div className="min-h-screen bg-slate-100 px-6 py-10">
+      <div className="mx-auto flex max-w-6xl flex-col gap-8">
+        <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h1 className="text-3xl font-bold text-slate-900">assets-library Test Page</h1>
+          <p className="mt-2 text-slate-600">
+            Quick visual check for props, className DSL, mixed usage, and icons across multiple groups.
+          </p>
         </div>
-      </div>
 
-      <Icon className="business_chartLine hover:scale-110 transition duration-500" size={40}/>
-      <Icon className="business_chartLine_40 text-red-500" />
-      <Icon className="business_chartLine_lg text-blue-500" />
-      <Icon className="business_chartLine text-green-500" />
+        {iconExamples.map((section) => (
+          <section key={section.title} className="flex flex-col gap-3">
+            <h2 className={sectionTitleStyle}>{section.title}</h2>
+            <div className={rowStyle}>{section.items}</div>
+          </section>
+        ))}
 
-      {/* RIGHT SIDEBAR */}
-      <div className="w-64 border-l border-gray-200 p-6 sticky top-0 h-screen bg-white">
-        <h2 className="text-lg font-semibold mb-4 text-gray-800">
-          Categories
-        </h2>
-
-        <div className="space-y-3 overflow-y-auto h-[90%]">
-          {sortedSections.map((section) => (
-            <div
-              key={section.title}
-              className="text-gray-500 hover:text-blue-600 
-                         hover:font-medium 
-                         cursor-pointer text-sm transition">
-              {section.title}
+        <section className="flex flex-col gap-3">
+          <h2 className={sectionTitleStyle}>Parent Color</h2>
+          <div className={rowStyle}>
+            <div style={{ color: "teal" }} className="flex items-center gap-4">
+              <Icon group="business" name="chartLine" size={40} />
+              <Icon group="weather" name="cloudy" size={40} />
+              <Icon group="uiIcons" name="share" size={40} />
+              <Icon group="action" name="check" size={40} />
             </div>
-          ))}
-        </div>
+          </div>
+        </section>
       </div>
     </div>
   );

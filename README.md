@@ -26,10 +26,11 @@ import { Icon } from "iconic";
 
 ## Basic usage (For those not using tailwind)
 
+```txt
 General Usage looks like:
 <Icon group="group_name" name="icon_name" size*={icon_size} color*="color"/>
 * optional parameter
-
+```
 
 ```jsx
 import { Icon } from "iconic";

@@ -20,6 +20,7 @@ import * as v from "react-icons/bs";
 import * as y from "react-icons/hi2";
 import * as b from "react-icons/bi";
 import { jsx as x } from "react/jsx-runtime";
+
 //#region src/my-icons/maps/actionMap.js
 var S = {
 	add: e.FaPlus,
