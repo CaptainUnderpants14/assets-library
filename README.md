@@ -32,6 +32,8 @@ General Usage looks like:
 * optional parameter
 ```
 
+Example:
+
 ```jsx
 import { Icon } from "iconic";
 
@@ -96,7 +98,7 @@ You can also pass a number:
   name="chartLine"
   size="md"
   color="red"
-  className="hover:text-"
+  className="hover:text-cyan-600"
 />
 ```
 
