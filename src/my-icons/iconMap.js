@@ -1,6 +1,6 @@
 import { actionIcons } from "./maps/actionMap";
 import { alertIcons } from "./maps/alertMap";
-import { awardIcons } from "./maps/awardmap";
+import { awardIcons } from "./maps/awardMap";
 import { appsIcons} from "./maps/appsMap";
 import { businessIcons } from "./maps/businessMap";
 import { devIcons } from "./maps/devMap";

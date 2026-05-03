@@ -6,18 +6,17 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/index.js",
-      name: "AssetsLibrary",
       formats: ["es"],
       fileName: "index"
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
-      output: {
-        globals: {
-          react: "React",
-          "react-dom": "ReactDOM"
-        }
-      }
+      external: (id) =>
+        id === "react" ||
+        id === "react-dom" ||
+        id === "react/jsx-runtime" ||
+        id === "react/jsx-dev-runtime" ||
+        id === "react-icons" ||
+        id.startsWith("react-icons/")
     }
   }
 });
