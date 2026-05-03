@@ -1,432 +1,240 @@
-import {
-  FaSyncAlt,
-  FaRedo,
-  FaHome,
-  FaArrowLeft,
-  FaArrowRight,
-  FaTrash,
-  FaTimes,
-  FaEdit,
-  FaPen,
-  FaCopy,
-  FaPaste,
-  FaList,
-  FaEllipsisH,
-  FaBars
-} from "react-icons/fa";
-
-import {
-  MdRefresh,
-  MdHome,
-  MdArrowBack,
-  MdArrowForward,
-  MdDelete,
-  MdEdit,
-  MdContentCopy,
-  MdContentPaste,
-  MdViewList,
-  MdMoreHoriz,
-  MdMenu
-} from "react-icons/md";
-
-import {
-  AiOutlineReload,
-  AiOutlineHome,
-  AiOutlineArrowLeft,
-  AiOutlineArrowRight,
-  AiOutlineDelete,
-  AiOutlineEdit,
-  AiOutlineCopy,
-} from "react-icons/ai";
-
-import {
-  IoRefresh,
-  IoHome,
-  IoArrowBack,
-  IoArrowForward,
-  IoTrash,
-  IoPencil,
-  IoCopy,
-  IoList,
-  IoEllipsisHorizontal
-} from "react-icons/io5";
-
-import {
-  TbRefresh,
-  TbHome,
-  TbArrowLeft,
-  TbArrowRight,
-  TbTrash,
-  TbEdit,
-  TbCopy,
-  TbMenu2
-} from "react-icons/tb";
-
-import {
-  FaHeart,
-  FaRegHeart,
-  FaThumbsUp,
-  FaThumbsDown,
-  FaBookmark,
-  FaRegBookmark,
-  FaShare,
-  FaComment,
-  FaPaperPlane,
-  FaReply,
-  FaRetweet,
-  FaPhone,
-  FaPhoneAlt,
-  FaVideo,
-  FaCamera,
-  FaCameraRetro,
-  FaBroadcastTower
-} from "react-icons/fa";
-
-import {
-  MdFavorite,
-  MdFavoriteBorder,
-  MdThumbUp,
-  MdThumbDown,
-  MdBookmark,
-  MdBookmarkBorder,
-  MdShare,
-  MdChat,
-  MdSend,
-  MdReply,
-  MdCall,
-  MdVideocam,
-  MdPhotoCamera,
-  MdSwitchCamera,
-  MdOutlineChat
-} from "react-icons/md";
-
-import {
-  AiFillHeart,
-  AiOutlineHeart,
-  AiOutlineLike,
-  AiOutlineDislike,
-//   AiOutlineBookmark,
-  AiOutlineMore,
-  AiOutlineShareAlt,
-  AiOutlineComment,
-  AiOutlineSend,
-  AiOutlinePhone,
-  AiOutlineCamera,
-  AiOutlineVideoCamera
-} from "react-icons/ai";
-
-import {
-  IoHeart,
-  IoHeartOutline,
-  IoThumbsUp,
-  IoThumbsDown,
-  IoBookmark,
-  IoBookmarkOutline,
-  IoShareSocial,
-  IoChatbubble,
-  IoChatbubbleOutline,
-  IoSend,
-  IoCall,
-  IoVideocam,
-  IoCamera,
-  IoCameraReverse,
-  IoSync
-} from "react-icons/io5";
-
-import {
-  FaDownload,
-  FaUpload,
-  FaLink,
-  FaUnlink,
-  FaBell,
-  FaBellSlash,
-  FaCog,
-  FaInfoCircle,
-  FaBatteryFull,
-  FaPowerOff,
-  FaMoon,
-  FaLock,
-  FaUnlock,
-  FaShieldAlt
-} from "react-icons/fa";
-
-import {
-  MdDownload,
-  MdUpload,
-  MdLink,
-  MdLinkOff,
-  MdNotifications,
-  MdNotificationsOff,
-  MdSettings,
-  MdInfo,
-  MdBatteryFull,
-  MdPowerSettingsNew,
-  MdBedtime,
-  MdLock,
-  MdLockOpen,
-  MdSecurity
-} from "react-icons/md";
-
-import {
-  AiOutlineDownload,
-  AiOutlineUpload,
-  AiOutlineLink,
-  AiOutlineDisconnect,
-  AiOutlineBell,
-  AiOutlineSetting,
-  AiOutlineInfoCircle,
-  AiOutlinePoweroff,
-  AiOutlineLock,
-  AiOutlineUnlock
-} from "react-icons/ai";
-
-import {
-  IoDownload,
-  // IoUpload,
-  IoLink,
-  IoLinkOutline,
-  IoNotifications,
-  IoNotificationsOff,
-  IoSettings,
-  IoInformationCircle,
-  IoBatteryFull,
-  IoPower,
-  IoMoon,
-  IoLockClosed,
-  IoLockOpen
-} from "react-icons/io5";
+import * as faIcons from "react-icons/fa";
+import * as mdIcons from "react-icons/md";
+import * as aiIcons from "react-icons/ai";
+import * as io5Icons from "react-icons/io5";
+import * as tbIcons from "react-icons/tb";
 
 // Combined Social / Media Icons
 export const uiIconsMap = {
   // ❤️ Like / Favorite
-  like: FaHeart,
-  likeOutline: FaRegHeart,
-  likeMd: MdFavorite,
-  likeMdOutline: MdFavoriteBorder,
-  likeAlt: AiFillHeart,
-  likeAltOutline: AiOutlineHeart,
-  likeIon: IoHeart,
-  likeIonOutline: IoHeartOutline,
+  like: faIcons.FaHeart,
+  likeOutline: faIcons.FaRegHeart,
+  likeMd: mdIcons.MdFavorite,
+  likeMdOutline: mdIcons.MdFavoriteBorder,
+  likeAlt: aiIcons.AiFillHeart,
+  likeAltOutline: aiIcons.AiOutlineHeart,
+  likeIon: io5Icons.IoHeart,
+  likeIonOutline: io5Icons.IoHeartOutline,
 
   // 👍 / 👎 Reactions
-  thumbsUp: FaThumbsUp,
-  thumbsDown: FaThumbsDown,
-  thumbsUpMd: MdThumbUp,
-  thumbsDownMd: MdThumbDown,
-  likeOutlineAlt: AiOutlineLike,
-  dislikeOutlineAlt: AiOutlineDislike,
-  thumbsUpIon: IoThumbsUp,
-  thumbsDownIon: IoThumbsDown,
+  thumbsUp: faIcons.FaThumbsUp,
+  thumbsDown: faIcons.FaThumbsDown,
+  thumbsUpMd: mdIcons.MdThumbUp,
+  thumbsDownMd: mdIcons.MdThumbDown,
+  likeOutlineAlt: aiIcons.AiOutlineLike,
+  dislikeOutlineAlt: aiIcons.AiOutlineDislike,
+  thumbsUpIon: io5Icons.IoThumbsUp,
+  thumbsDownIon: io5Icons.IoThumbsDown,
 
   // 🔖 Bookmark / Save
-  bookmark: FaBookmark,
-  bookmarkOutline: FaRegBookmark,
-  bookmarkMd: MdBookmark,
-  bookmarkMdOutline: MdBookmarkBorder,
+  bookmark: faIcons.FaBookmark,
+  bookmarkOutline: faIcons.FaRegBookmark,
+  bookmarkMd: mdIcons.MdBookmark,
+  bookmarkMdOutline: mdIcons.MdBookmarkBorder,
 //   bookmarkAlt: AiOutlineBookmark,
-  bookmarkIon: IoBookmark,
-  bookmarkIonOutline: IoBookmarkOutline,
+  bookmarkIon: io5Icons.IoBookmark,
+  bookmarkIonOutline: io5Icons.IoBookmarkOutline,
 
   // ⋯ More / Options
-  more: FaEllipsisH,
-  moreMd: MdMoreHoriz,
-  moreAlt: AiOutlineMore,
-  moreIon: IoEllipsisHorizontal,
+  more: faIcons.FaEllipsisH,
+  moreMd: mdIcons.MdMoreHoriz,
+  moreAlt: aiIcons.AiOutlineMore,
+  moreIon: io5Icons.IoEllipsisHorizontal,
 
   // 💬 Comment / Chat
-  comment: FaComment,
+  comment: faIcons.FaComment,
 //   commentOutline: FaRegComment,
-  commentMd: MdChat,
-  commentMdOutline: MdOutlineChat,
-  commentAlt: AiOutlineComment,
-  commentIon: IoChatbubble,
-  commentIonOutline: IoChatbubbleOutline,
+  commentMd: mdIcons.MdChat,
+  commentMdOutline: mdIcons.MdOutlineChat,
+  commentAlt: aiIcons.AiOutlineComment,
+  commentIon: io5Icons.IoChatbubble,
+  commentIonOutline: io5Icons.IoChatbubbleOutline,
 
   // ↩️ Reply / Thread
-  reply: FaReply,
-  replyMd: MdReply,
+  reply: faIcons.FaReply,
+  replyMd: mdIcons.MdReply,
 
   // 🔁 Repost / Retweet
-  repost: FaRetweet,
-  repostIon: IoSync,
+  repost: faIcons.FaRetweet,
+  repostIon: io5Icons.IoSync,
 
   // 🔗 Share
-  share: FaShare,
-  shareMd: MdShare,
-  shareAlt: AiOutlineShareAlt,
-  shareIon: IoShareSocial,
+  share: faIcons.FaShare,
+  shareMd: mdIcons.MdShare,
+  shareAlt: aiIcons.AiOutlineShareAlt,
+  shareIon: io5Icons.IoShareSocial,
 
   // 📤 Send / DM
-  send: FaPaperPlane,
-  sendMd: MdSend,
-  sendAlt: AiOutlineSend,
-  sendIon: IoSend,
+  send: faIcons.FaPaperPlane,
+  sendMd: mdIcons.MdSend,
+  sendAlt: aiIcons.AiOutlineSend,
+  sendIon: io5Icons.IoSend,
 
   // 📞 Call
-  phone: FaPhone,
-  phoneAlt: FaPhoneAlt,
-  phoneMd: MdCall,
-  phoneOutline: AiOutlinePhone,
-  phoneIon: IoCall,
+  phone: faIcons.FaPhone,
+  phoneAlt: faIcons.FaPhoneAlt,
+  phoneMd: mdIcons.MdCall,
+  phoneOutline: aiIcons.AiOutlinePhone,
+  phoneIon: io5Icons.IoCall,
 
   // 🎥 Video
-  video: FaVideo,
-  videoMd: MdVideocam,
-  videoOutline: AiOutlineVideoCamera,
-  videoIon: IoVideocam,
+  video: faIcons.FaVideo,
+  videoMd: mdIcons.MdVideocam,
+  videoOutline: aiIcons.AiOutlineVideoCamera,
+  videoIon: io5Icons.IoVideocam,
 
   // 📸 Camera
-  camera: FaCamera,
-  cameraAlt: FaCameraRetro,
-  cameraMd: MdPhotoCamera,
-  cameraSwitch: MdSwitchCamera,
-  cameraOutline: AiOutlineCamera,
-  cameraIon: IoCamera,
-  cameraFlip: IoCameraReverse,
+  camera: faIcons.FaCamera,
+  cameraAlt: faIcons.FaCameraRetro,
+  cameraMd: mdIcons.MdPhotoCamera,
+  cameraSwitch: mdIcons.MdSwitchCamera,
+  cameraOutline: aiIcons.AiOutlineCamera,
+  cameraIon: io5Icons.IoCamera,
+  cameraFlip: io5Icons.IoCameraReverse,
 
   // 📡 Live / Broadcast
-  live: FaBroadcastTower,
+  live: faIcons.FaBroadcastTower,
 
   // ================= ⬇️ DOWNLOAD =================
-  download: FaDownload,
-  downloadMd: MdDownload,
-  downloadAlt: AiOutlineDownload,
-  downloadIon: IoDownload,
+  download: faIcons.FaDownload,
+  downloadMd: mdIcons.MdDownload,
+  downloadAlt: aiIcons.AiOutlineDownload,
+  downloadIon: io5Icons.IoDownload,
 
   // ================= ⬆️ UPLOAD =================
-  upload: FaUpload,
-  uploadMd: MdUpload,
-  uploadAlt: AiOutlineUpload,
+  upload: faIcons.FaUpload,
+  uploadMd: mdIcons.MdUpload,
+  uploadAlt: aiIcons.AiOutlineUpload,
   // uploadIon: IoUpload,
 
   // ================= 🔗 LINK =================
-  link: FaLink,
-  linkMd: MdLink,
-  linkAlt: AiOutlineLink,
-  linkIon: IoLink,
+  link: faIcons.FaLink,
+  linkMd: mdIcons.MdLink,
+  linkAlt: aiIcons.AiOutlineLink,
+  linkIon: io5Icons.IoLink,
 
   // ================= ❌ UNLINK =================
-  unlink: FaUnlink,
-  unlinkMd: MdLinkOff,
-  unlinkAlt: AiOutlineDisconnect,
-  unlinkIon: IoLinkOutline,
+  unlink: faIcons.FaUnlink,
+  unlinkMd: mdIcons.MdLinkOff,
+  unlinkAlt: aiIcons.AiOutlineDisconnect,
+  unlinkIon: io5Icons.IoLinkOutline,
 
   // ================= 🔔 NOTIFICATIONS =================
-  notification: FaBell,
-  notificationOff: FaBellSlash,
-  notificationMd: MdNotifications,
-  notificationMdOff: MdNotificationsOff,
-  notificationAlt: AiOutlineBell,
-  notificationIon: IoNotifications,
-  notificationIonOff: IoNotificationsOff,
+  notification: faIcons.FaBell,
+  notificationOff: faIcons.FaBellSlash,
+  notificationMd: mdIcons.MdNotifications,
+  notificationMdOff: mdIcons.MdNotificationsOff,
+  notificationAlt: aiIcons.AiOutlineBell,
+  notificationIon: io5Icons.IoNotifications,
+  notificationIonOff: io5Icons.IoNotificationsOff,
 
   // ================= ⚙️ SETTINGS =================
-  settings: FaCog,
-  settingsMd: MdSettings,
-  settingsAlt: AiOutlineSetting,
-  settingsIon: IoSettings,
+  settings: faIcons.FaCog,
+  settingsMd: mdIcons.MdSettings,
+  settingsAlt: aiIcons.AiOutlineSetting,
+  settingsIon: io5Icons.IoSettings,
 
   // ================= 🔐 SECURITY =================
-  security: FaShieldAlt,
-  securityMd: MdSecurity,
+  security: faIcons.FaShieldAlt,
+  securityMd: mdIcons.MdSecurity,
 
-  lock: FaLock,
-  unlock: FaUnlock,
-  lockMd: MdLock,
-  unlockMd: MdLockOpen,
-  lockAlt: AiOutlineLock,
-  unlockAlt: AiOutlineUnlock,
-  lockIon: IoLockClosed,
-  unlockIon: IoLockOpen,
+  lock: faIcons.FaLock,
+  unlock: faIcons.FaUnlock,
+  lockMd: mdIcons.MdLock,
+  unlockMd: mdIcons.MdLockOpen,
+  lockAlt: aiIcons.AiOutlineLock,
+  unlockAlt: aiIcons.AiOutlineUnlock,
+  lockIon: io5Icons.IoLockClosed,
+  unlockIon: io5Icons.IoLockOpen,
 
 
   // ================= ℹ️ INFO =================
-  info: FaInfoCircle,
-  infoMd: MdInfo,
-  infoAlt: AiOutlineInfoCircle,
-  infoIon: IoInformationCircle,
+  info: faIcons.FaInfoCircle,
+  infoMd: mdIcons.MdInfo,
+  infoAlt: aiIcons.AiOutlineInfoCircle,
+  infoIon: io5Icons.IoInformationCircle,
 
   // ================= 🔋 BATTERY =================
-  battery: FaBatteryFull,
-  batteryMd: MdBatteryFull,
-  batteryIon: IoBatteryFull,
+  battery: faIcons.FaBatteryFull,
+  batteryMd: mdIcons.MdBatteryFull,
+  batteryIon: io5Icons.IoBatteryFull,
 
   // ================= ⏻ POWER =================
-  power: FaPowerOff,
-  powerMd: MdPowerSettingsNew,
-  powerAlt: AiOutlinePoweroff,
-  powerIon: IoPower,
+  power: faIcons.FaPowerOff,
+  powerMd: mdIcons.MdPowerSettingsNew,
+  powerAlt: aiIcons.AiOutlinePoweroff,
+  powerIon: io5Icons.IoPower,
 
   // ================= 🌙 SLEEP =================
-  sleep: FaMoon,
-  sleepMd: MdBedtime,
-  sleepIon: IoMoon,
+  sleep: faIcons.FaMoon,
+  sleepMd: mdIcons.MdBedtime,
+  sleepIon: io5Icons.IoMoon,
 
   // ================= 🔄 REFRESH =================
-refresh: FaSyncAlt,
-refreshMd: MdRefresh,
-refreshAlt: AiOutlineReload,
-refreshIon: IoRefresh,
-refreshTb: TbRefresh,
-reload: FaRedo,
+refresh: faIcons.FaSyncAlt,
+refreshMd: mdIcons.MdRefresh,
+refreshAlt: aiIcons.AiOutlineReload,
+refreshIon: io5Icons.IoRefresh,
+refreshTb: tbIcons.TbRefresh,
+reload: faIcons.FaRedo,
 
 
 // ================= 🏠 HOME =================
-home: FaHome,
-homeMd: MdHome,
-homeAlt: AiOutlineHome,
-homeIon: IoHome,
-homeTb: TbHome,
-dashboard: FaHome,
+home: faIcons.FaHome,
+homeMd: mdIcons.MdHome,
+homeAlt: aiIcons.AiOutlineHome,
+homeIon: io5Icons.IoHome,
+homeTb: tbIcons.TbHome,
+dashboard: faIcons.FaHome,
 
 // ================= ⬅️➡️ NAVIGATION =================
-back: FaArrowLeft,
-backMd: MdArrowBack,
-backAlt: AiOutlineArrowLeft,
-backIon: IoArrowBack,
-backTb: TbArrowLeft,
+back: faIcons.FaArrowLeft,
+backMd: mdIcons.MdArrowBack,
+backAlt: aiIcons.AiOutlineArrowLeft,
+backIon: io5Icons.IoArrowBack,
+backTb: tbIcons.TbArrowLeft,
 
-forward: FaArrowRight,
-forwardMd: MdArrowForward,
-forwardAlt: AiOutlineArrowRight,
-forwardIon: IoArrowForward,
-forwardTb: TbArrowRight,
+forward: faIcons.FaArrowRight,
+forwardMd: mdIcons.MdArrowForward,
+forwardAlt: aiIcons.AiOutlineArrowRight,
+forwardIon: io5Icons.IoArrowForward,
+forwardTb: tbIcons.TbArrowRight,
 
 // ================= 🗑️ DELETE =================
-delete: FaTrash,
-deleteMd: MdDelete,
-deleteAlt: AiOutlineDelete,
-deleteIon: IoTrash,
-deleteTb: TbTrash,
-remove: FaTimes,
-clear: FaTimes,
+delete: faIcons.FaTrash,
+deleteMd: mdIcons.MdDelete,
+deleteAlt: aiIcons.AiOutlineDelete,
+deleteIon: io5Icons.IoTrash,
+deleteTb: tbIcons.TbTrash,
+remove: faIcons.FaTimes,
+clear: faIcons.FaTimes,
 
 // ================= ✏️ EDIT =================
-edit: FaEdit,
-editMd: MdEdit,
-editAlt: AiOutlineEdit,
-editIon: IoPencil,
-editTb: TbEdit,
-write: FaPen,
+edit: faIcons.FaEdit,
+editMd: mdIcons.MdEdit,
+editAlt: aiIcons.AiOutlineEdit,
+editIon: io5Icons.IoPencil,
+editTb: tbIcons.TbEdit,
+write: faIcons.FaPen,
 
 // ================= 📋 COPY / PASTE =================
-copy: FaCopy,
-copyMd: MdContentCopy,
-copyAlt: AiOutlineCopy,
-copyIon: IoCopy,
-copyTb: TbCopy,
-duplicate: FaCopy,
+copy: faIcons.FaCopy,
+copyMd: mdIcons.MdContentCopy,
+copyAlt: aiIcons.AiOutlineCopy,
+copyIon: io5Icons.IoCopy,
+copyTb: tbIcons.TbCopy,
+duplicate: faIcons.FaCopy,
 
-paste: FaPaste,
-pasteMd: MdContentPaste,
+paste: faIcons.FaPaste,
+pasteMd: mdIcons.MdContentPaste,
 
-list: FaList,
-listMd: MdViewList,
-listIon: IoList,
+list: faIcons.FaList,
+listMd: mdIcons.MdViewList,
+listIon: io5Icons.IoList,
 
 // ================= ⋯ MORE =================
-moreDots: FaEllipsisH,
-menu: FaBars,
-menuMd: MdMenu,
-menuTb: TbMenu2,
+moreDots: faIcons.FaEllipsisH,
+menu: faIcons.FaBars,
+menuMd: mdIcons.MdMenu,
+menuTb: tbIcons.TbMenu2,
 };

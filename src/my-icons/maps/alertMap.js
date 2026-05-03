@@ -1,90 +1,54 @@
-import {
-  FaBell,
-  FaExclamation,
-  FaExclamationTriangle,
-  FaExclamationCircle,
-  FaInfoCircle,
-  FaQuestionCircle,
-  FaTimesCircle,
-  FaCheckCircle,
-  FaSkullCrossbones,
-  FaBellSlash
-} from "react-icons/fa";
-
-import {
-  MdWarning,
-  MdError,
-  MdInfo,
-  MdNotifications,
-  MdNotificationsActive,
-  MdReport,
-  MdReportProblem,
-  MdSnooze 
-} from "react-icons/md";
-
-import {
-  AiFillWarning,
-  AiOutlineExclamationCircle,
-  AiOutlineInfoCircle,
-  AiOutlineWarning,
-  AiFillNotification
-} from "react-icons/ai";
-
-import {
-  IoWarning,
-  IoNotifications,
-  IoAlertCircle,
-  IoAlert,
-  IoInformationCircle,
-  IoNotificationsOff 
-} from "react-icons/io5";
+import * as faIcons from "react-icons/fa";
+import * as mdIcons from "react-icons/md";
+import * as aiIcons from "react-icons/ai";
+import * as io5Icons from "react-icons/io5";
 
 // Alert / Attention icons map
 export const alertIcons = {
   // Notifications
-  bell: FaBell,
-  notifications: MdNotifications,
-  notificationsActive: MdNotificationsActive,
-  notificationAlt: AiFillNotification,
-  notificationIon: IoNotifications,
+  bell: faIcons.FaBell,
+  notifications: mdIcons.MdNotifications,
+  notificationsActive: mdIcons.MdNotificationsActive,
+  notificationAlt: aiIcons.AiFillNotification,
+  notificationIon: io5Icons.IoNotifications,
 
   // Silence / Mute
-  silent: FaBellSlash,
-  mute: IoNotificationsOff,
+  silent: faIcons.FaBellSlash,
+  mute: io5Icons.IoNotificationsOff,
 
   // Snooze
-  snooze: MdSnooze,
+  snooze: mdIcons.MdSnooze,
 
   // Warnings
-  warning: MdWarning,
-  warningAlt: AiFillWarning,
-  warningOutline: AiOutlineWarning,
-  warningIon: IoWarning,
-  reportProblem: MdReportProblem,
+  warning: mdIcons.MdWarning,
+  warningAlt: aiIcons.AiFillWarning,
+  warningOutline: aiIcons.AiOutlineWarning,
+  warningIon: io5Icons.IoWarning,
+  reportProblem: mdIcons.MdReportProblem,
 
   // Exclamation / Attention
-  exclamation: FaExclamation,
-  exclamationTriangle: FaExclamationTriangle,
-  exclamationCircle: FaExclamationCircle,
-  exclamationOutline: AiOutlineExclamationCircle,
-  alertCircle: IoAlertCircle,
-  alert: IoAlert,
+  exclamation: faIcons.FaExclamation,
+  exclamationTriangle: faIcons.FaExclamationTriangle,
+  exclamationCircle: faIcons.FaExclamationCircle,
+  exclamationOutline: aiIcons.AiOutlineExclamationCircle,
+  alertCircle: io5Icons.IoAlertCircle,
+  alert: io5Icons.IoAlert,
 
   // Info
-  info: MdInfo,
-  infoCircle: FaInfoCircle,
-  infoOutline: AiOutlineInfoCircle,
-  infoIon: IoInformationCircle,
+  info: mdIcons.MdInfo,
+  infoCircle: faIcons.FaInfoCircle,
+  infoOutline: aiIcons.AiOutlineInfoCircle,
+  infoIon: io5Icons.IoInformationCircle,
 
   // Errors / Critical
-  error: MdError,
-  errorCircle: FaTimesCircle,
-  critical: FaSkullCrossbones,
-  report: MdReport,
+  error: mdIcons.MdError,
+  errorCircle: faIcons.FaTimesCircle,
+  critical: faIcons.FaSkullCrossbones,
+  report: mdIcons.MdReport,
 
   // Success
-  success: FaCheckCircle,
+  success: faIcons.FaCheckCircle,
 
   // Help
-  help: FaQuestionCircle
+  help: faIcons.FaQuestionCircle
 };

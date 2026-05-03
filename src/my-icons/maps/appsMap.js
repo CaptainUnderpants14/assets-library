@@ -1,76 +1,48 @@
+import * as siIcons from "react-icons/si";
+import * as faIcons from "react-icons/fa";
+
 // ================= IMPORTS =================
-import {
-  SiX,
-  SiGoogle,
-  SiGithub,
-  SiInstagram,
-  SiFacebook,
-  SiYoutube,
-  SiDiscord,
-  SiTiktok,
-  SiReddit,
-  SiWhatsapp,
-  SiTelegram,
-  SiSnapchat,
-  SiPinterest,
-  SiLine,
-  SiViber,
-  SiSignal,
-  SiMessenger,
-  SiSlack,
-  SiThreads,
-  SiMastodon,
-  SiTwitch,
-  SiFlickr,
-  SiImgur,
-  SiQuora,
-  SiZoom,
-  SiGooglemeet,
-} from "react-icons/si";
-
-import { FaLinkedin, FaLinkedinIn, FaMedium, FaGoogle  } from "react-icons/fa";
-
 // ================= MAP =================
 export const appsIcons = {
   // ================= 💬 Messaging =================
-  whatsapp: SiWhatsapp,
-  telegram: SiTelegram,
-  signal: SiSignal,
-  messenger: SiMessenger,
-  line: SiLine,
-  viber: SiViber,
-  discord: SiDiscord,
-  slack: SiSlack,
-  snapchat: SiSnapchat,
+  whatsapp: siIcons.SiWhatsapp,
+  telegram: siIcons.SiTelegram,
+  signal: siIcons.SiSignal,
+  messenger: siIcons.SiMessenger,
+  line: siIcons.SiLine,
+  viber: siIcons.SiViber,
+  discord: siIcons.SiDiscord,
+  slack: siIcons.SiSlack,
+  snapchat: siIcons.SiSnapchat,
 
   // ================= 🌐 Social =================
-  facebook: SiFacebook,
-  instagram: SiInstagram,
-  x: SiX,
-  tiktok: SiTiktok,
-  pinterest: SiPinterest,
-  reddit: SiReddit,
-  threads: SiThreads,
-  mastodon: SiMastodon,
+  facebook: siIcons.SiFacebook,
+  instagram: siIcons.SiInstagram,
+  x: siIcons.SiX,
+  tiktok: siIcons.SiTiktok,
+  pinterest: siIcons.SiPinterest,
+  reddit: siIcons.SiReddit,
+  threads: siIcons.SiThreads,
+  mastodon: siIcons.SiMastodon,
 
   // ================= 🎥 Streaming =================
-  youtube: SiYoutube,
-  twitch: SiTwitch,
+  youtube: siIcons.SiYoutube,
+  twitch: siIcons.SiTwitch,
 
   // ================= 📸 Media =================
-  flickr: SiFlickr,
-  imgur: SiImgur,
+  flickr: siIcons.SiFlickr,
+  imgur: siIcons.SiImgur,
 
   // ================= 🧠 Content / Forums =================
-  quora: SiQuora,
-  medium: FaMedium,
+  quora: siIcons.SiQuora,
+  medium: faIcons.FaMedium,
 
   // ================= 💼 Professional =================
-  zoom: SiZoom,
-  linkedIn: FaLinkedinIn,
-  linkedInAlt: FaLinkedin,
-  googleMeet: SiGooglemeet,
-  github: SiGithub,
-  google: SiGoogle,
-  googleAlt: FaGoogle
+  zoom: siIcons.SiZoom,
+  linkedIn: faIcons.FaLinkedinIn,
+  linkedInAlt: faIcons.FaLinkedin,
+  googleMeet: siIcons.SiGooglemeet,
+  github: siIcons.SiGithub,
+  google: siIcons.SiGoogle,
+  googleAlt: faIcons.FaGoogle
 };

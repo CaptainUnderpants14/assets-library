@@ -1,194 +1,111 @@
+import * as wiIcons from "react-icons/wi";
+import * as giIcons from "react-icons/gi";
+import * as faIcons from "react-icons/fa";
+import * as mdIcons from "react-icons/md";
+import * as tbIcons from "react-icons/tb";
+
 // ================= IMPORTS =================
-import {
-  // Weather Icons (wi) - Most comprehensive set
-  WiDaySunny,
-  WiDayCloudy,
-  WiDayCloudyHigh,
-  WiDayRain,
-  WiDayThunderstorm,
-  WiDaySnow,
-  WiDayFog,
-  WiNightClear,
-  WiNightAltCloudy,
-  WiNightAltRain,
-  WiNightAltThunderstorm,
-  WiNightAltSnow,
-  WiCloud,
-  WiCloudy,
-  WiCloudyGusts,
-  WiCloudyWindy,
-  WiRain,
-  WiRainMix,
-  WiShowers,
-  WiStormShowers,
-  WiThunderstorm,
-  WiSnow,
-  WiSnowWind,
-  WiSleet,
-  WiFog,
-  WiDust,
-  WiSmoke,
-  WiDayHaze,
-  WiStrongWind,
-  WiWindy,
-  WiHumidity,
-  WiSunrise,
-  WiSunset,
-  WiMoonFull,
-  WiMoonFirstQuarter,
-  WiMoonThirdQuarter,
-  WiSolarEclipse,
-  WiLunarEclipse,
-  WiStars,
-} from "react-icons/wi";
-
-import {
-  // Game Icons (gi) - Stylized/dramatic alternatives
-  GiTornado,
-  GiVolcano,
-  GiLava,
-  GiFire,
-  GiWaterSplash,
-  GiWaveSurfer,
-  GiEarthCrack,
-  GiIceberg,
-  GiSnowflake2,
-  GiWindSlap,
-  GiSun,
-  GiMoon,
-  GiCometSpark,
-  GiBlackHoleBolas,
-} from "react-icons/gi";
-
-import {
-  // Font Awesome (fa) - Clean alternatives
-  FaCloudSun,
-  FaCloudRain,
-  FaWind,
-  FaWater,
-  FaFire,
-  FaTemperatureHigh,
-  FaTemperatureLow,
-  FaSmog,
-} from "react-icons/fa";
-
-import {
-  // Material Icons (md)
-  MdStorm,
-  MdFlood,
-  MdOutlineWaves,
-  MdGrain,
-  MdSunny,
-} from "react-icons/md";
-
-import {
-  // Tabler (tb)
-  TbWaveSine,
-  TbWind,
-  TbTemperature,
-} from "react-icons/tb";
-
 // ================= MAP =================
 export const weatherIcons = {
   // ================= ☀️ DAY WEATHER =================
-  sunny: WiDaySunny,
-  sunnyAlt: MdSunny,
-  sunnySunrise: WiSunrise,
-  sunnySunset: WiSunset,
-  partlyCloudyDay: WiDayCloudy,
-  partlyCloudyDayAlt: FaCloudSun,
-  mostlyCloudyDay: WiDayCloudyHigh,
-  dayRain: WiDayRain,
-  dayThunder: WiDayThunderstorm,
-  daySnow: WiDaySnow,
-  dayFog: WiDayFog,
+  sunny: wiIcons.WiDaySunny,
+  sunnyAlt: mdIcons.MdSunny,
+  sunnySunrise: wiIcons.WiSunrise,
+  sunnySunset: wiIcons.WiSunset,
+  partlyCloudyDay: wiIcons.WiDayCloudy,
+  partlyCloudyDayAlt: faIcons.FaCloudSun,
+  mostlyCloudyDay: wiIcons.WiDayCloudyHigh,
+  dayRain: wiIcons.WiDayRain,
+  dayThunder: wiIcons.WiDayThunderstorm,
+  daySnow: wiIcons.WiDaySnow,
+  dayFog: wiIcons.WiDayFog,
 
   // ================= 🌙 NIGHT WEATHER =================
-  clearNight: WiNightClear,
-  partlyCloudyNight: WiNightAltCloudy,
-  nightRain: WiNightAltRain,
-  nightThunder: WiNightAltThunderstorm,
-  nightSnow: WiNightAltSnow,
+  clearNight: wiIcons.WiNightClear,
+  partlyCloudyNight: wiIcons.WiNightAltCloudy,
+  nightRain: wiIcons.WiNightAltRain,
+  nightThunder: wiIcons.WiNightAltThunderstorm,
+  nightSnow: wiIcons.WiNightAltSnow,
 
   // ================= ☁️ CLOUDS =================
-  cloudy: WiCloud,
-  overcast: WiCloudy,
-  gustyClouds: WiCloudyGusts,
-  windyClouds: WiCloudyWindy,
+  cloudy: wiIcons.WiCloud,
+  overcast: wiIcons.WiCloudy,
+  gustyClouds: wiIcons.WiCloudyGusts,
+  windyClouds: wiIcons.WiCloudyWindy,
 
   // ================= 🌧️ PRECIPITATION =================
-  rain: WiRain,
-  rainAlt: WiDayRain,
-  mixedRain: WiRainMix,
-  showers: WiShowers,
-  stormShowers: WiStormShowers,
-  drizzle: FaCloudRain,
+  rain: wiIcons.WiRain,
+  rainAlt: wiIcons.WiDayRain,
+  mixedRain: wiIcons.WiRainMix,
+  showers: wiIcons.WiShowers,
+  stormShowers: wiIcons.WiStormShowers,
+  drizzle: faIcons.FaCloudRain,
 
   // ================= ⛈️ THUNDERSTORMS =================
-  thunderstorm: WiThunderstorm,
-  thunderstormAlt: WiDayThunderstorm,
+  thunderstorm: wiIcons.WiThunderstorm,
+  thunderstormAlt: wiIcons.WiDayThunderstorm,
 
   // ================= ❄️ SNOW & ICE =================
-  snow: WiSnow,
-  snowAlt: WiDaySnow,
-  snowWind: WiSnowWind,
-  sleet: WiSleet,
-  snowflake: GiSnowflake2,
-  iceberg: GiIceberg,
-  avalanche: GiSnowflake2,
+  snow: wiIcons.WiSnow,
+  snowAlt: wiIcons.WiDaySnow,
+  snowWind: wiIcons.WiSnowWind,
+  sleet: wiIcons.WiSleet,
+  snowflake: giIcons.GiSnowflake2,
+  iceberg: giIcons.GiIceberg,
+  avalanche: giIcons.GiSnowflake2,
 
   // ================= 💨 WIND & AIR =================
-  wind: WiStrongWind,
-  windAlt: GiWindSlap,
-  breeze: FaWind,
-  gust: TbWind,
-  windy: WiWindy,
-  humidity: WiHumidity,
+  wind: wiIcons.WiStrongWind,
+  windAlt: giIcons.GiWindSlap,
+  breeze: faIcons.FaWind,
+  gust: tbIcons.TbWind,
+  windy: wiIcons.WiWindy,
+  humidity: wiIcons.WiHumidity,
 
   // ================= 🌫️ ATMOSPHERE =================
-  fog: WiFog,
-  dust: WiDust,
-  sandstorm: MdGrain,
-  smoke: WiSmoke,
-  haze: WiDayHaze,
-  hazeFog: FaSmog,
+  fog: wiIcons.WiFog,
+  dust: wiIcons.WiDust,
+  sandstorm: mdIcons.MdGrain,
+  smoke: wiIcons.WiSmoke,
+  haze: wiIcons.WiDayHaze,
+  hazeFog: faIcons.FaSmog,
 
   // ================= 🌪️ SEVERE WEATHER / STORMS =================
-  tornado: GiTornado,
-  cyclone: MdStorm,
+  tornado: giIcons.GiTornado,
+  cyclone: mdIcons.MdStorm,
 
 
   // ================= 🌊 WATER EVENTS =================
-  flood: MdFlood,
-  waves: MdOutlineWaves,
-  water: FaWater,
-  waterSplash: GiWaterSplash,
-  ripple: TbWaveSine,
+  flood: mdIcons.MdFlood,
+  waves: mdIcons.MdOutlineWaves,
+  water: faIcons.FaWater,
+  waterSplash: giIcons.GiWaterSplash,
+  ripple: tbIcons.TbWaveSine,
 
   // ================= 🌋 GEOLOGICAL =================
-  earthquake: GiEarthCrack,
-  volcano: GiVolcano,
-  lava: GiLava,
+  earthquake: giIcons.GiEarthCrack,
+  volcano: giIcons.GiVolcano,
+  lava: giIcons.GiLava,
 
   // ================= 🔥 FIRE & HEAT =================
-  fire: FaFire,
-  fireAlt: GiFire,
-  heatwave: FaTemperatureHigh,
+  fire: faIcons.FaFire,
+  fireAlt: giIcons.GiFire,
+  heatwave: faIcons.FaTemperatureHigh,
 
   // ================= 🌡️ TEMPERATURE =================
-  temperature: TbTemperature,
-  hot: GiSun,
-  cold: FaTemperatureLow,
+  temperature: tbIcons.TbTemperature,
+  hot: giIcons.GiSun,
+  cold: faIcons.FaTemperatureLow,
 
   // ================= 🌌 CELESTIAL / SPACE =================
-  moon: WiNightClear,
-  moonAlt: GiMoon,
-  moonFull: WiMoonFull,
-  moonFirstQuarter: WiMoonFirstQuarter,
-  moonThirdQuarter: WiMoonThirdQuarter,
-  stars: WiStars,
-  solarEclipse: WiSolarEclipse,
-  lunarEclipse: WiLunarEclipse,
-  comet: GiCometSpark,
-  blackHole: GiBlackHoleBolas,
+  moon: wiIcons.WiNightClear,
+  moonAlt: giIcons.GiMoon,
+  moonFull: wiIcons.WiMoonFull,
+  moonFirstQuarter: wiIcons.WiMoonFirstQuarter,
+  moonThirdQuarter: wiIcons.WiMoonThirdQuarter,
+  stars: wiIcons.WiStars,
+  solarEclipse: wiIcons.WiSolarEclipse,
+  lunarEclipse: wiIcons.WiLunarEclipse,
+  comet: giIcons.GiCometSpark,
+  blackHole: giIcons.GiBlackHoleBolas,
 };

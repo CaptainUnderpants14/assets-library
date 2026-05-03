@@ -1,62 +1,36 @@
+import * as siIcons from "react-icons/si";
+import * as faIcons from "react-icons/fa";
+import * as tiIcons from "react-icons/ti";
+import * as grIcons from "react-icons/gr";
+
 // ================= IMPORTS =================
-import {
-  // Tech
-  SiApple,
-  SiIntel,
-  SiSamsung,
-  SiGoogle,
-  SiCisco,
-  SiDell,
-  SiHp,
-  SiSony,
-  SiNokia,
-
-  // Finance
-  SiVisa,
-  SiMastercard,
-  SiAmericanexpress,
-  SiPaypal,
-
-  // Fashion
-  SiNike,
-  SiAdidas,
-  SiPuma,
-  SiZara,
-
-} from "react-icons/si";
-
-import {FaMicrosoft, FaAmazon, FaAmazonPay } from "react-icons/fa";
-import { TiVendorMicrosoft } from "react-icons/ti";
-import { GrOracle } from "react-icons/gr";
-
-
 // ================= MAP =================
 export const brandsIcons = {
   // ================= 💻 TECH =================
-  apple: SiApple,
-  microsoft: FaMicrosoft,
-  microsoftAlt: TiVendorMicrosoft,
-  intel: SiIntel,
-  samsung: SiSamsung,
-  google: SiGoogle,
-  amazon: FaAmazon,
-  amazonPay: FaAmazonPay,
-  cisco: SiCisco,
-  oracle: GrOracle,
-  dell: SiDell,
-  hp: SiHp,
-  sony: SiSony,
-  nokia: SiNokia,
+  apple: siIcons.SiApple,
+  microsoft: faIcons.FaMicrosoft,
+  microsoftAlt: tiIcons.TiVendorMicrosoft,
+  intel: siIcons.SiIntel,
+  samsung: siIcons.SiSamsung,
+  google: siIcons.SiGoogle,
+  amazon: faIcons.FaAmazon,
+  amazonPay: faIcons.FaAmazonPay,
+  cisco: siIcons.SiCisco,
+  oracle: grIcons.GrOracle,
+  dell: siIcons.SiDell,
+  hp: siIcons.SiHp,
+  sony: siIcons.SiSony,
+  nokia: siIcons.SiNokia,
 
   // ================= 💵 FINANCE =================
-  visa: SiVisa,
-  mastercard: SiMastercard,
-  americanexpress: SiAmericanexpress,
-  paypal: SiPaypal,
+  visa: siIcons.SiVisa,
+  mastercard: siIcons.SiMastercard,
+  americanexpress: siIcons.SiAmericanexpress,
+  paypal: siIcons.SiPaypal,
 
   // ================= 👗 FASHION =================
-  nike: SiNike,
-  adidas: SiAdidas,
-  puma: SiPuma,
-  zara: SiZara,
+  nike: siIcons.SiNike,
+  adidas: siIcons.SiAdidas,
+  puma: siIcons.SiPuma,
+  zara: siIcons.SiZara,
 };

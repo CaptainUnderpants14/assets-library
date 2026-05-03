@@ -1,130 +1,76 @@
+import * as faIcons from "react-icons/fa";
+import * as mdIcons from "react-icons/md";
+import * as giIcons from "react-icons/gi";
+import * as tbIcons from "react-icons/tb";
+import * as ciIcons from "react-icons/ci";
+import * as fa6Icons from "react-icons/fa6";
+
 // ================= IMPORTS =================
-import {
-  FaUserMd,
-  FaUserNurse,
-  FaHospital,
-  FaClinicMedical,
-  FaStethoscope,
-  FaHeartbeat,
-  FaNotesMedical,
-  FaPrescriptionBottle,
-  FaPills,
-  FaCapsules,
-  FaSyringe,
-  FaBandAid,
-  FaProcedures,
-  FaWheelchair,
-  FaTooth,
-  FaEye,
-  FaLungs,
-  FaBrain,
-  FaHandHoldingMedical,
-} from "react-icons/fa";
-
-import {
-  MdLocalHospital,
-  MdMedicalServices,
-  MdVaccines,
-  MdHealthAndSafety,
-  MdMasks,
-  MdMedication,
-  MdBloodtype,
-  MdMonitorHeart,
-} from "react-icons/md";
-
-import {
-  GiHeartOrgan,
-  GiKidneys,
-  GiLiver,
-  GiStomach,
-  GiLungs,
-  GiBrain,
-  GiMedicalPack,
-  GiMedicalDrip,
-  GiPoisonBottle,
-} from "react-icons/gi";
-
-import {
-  TbAmbulance,
-  TbFirstAidKit,
-  TbTemperature,
-  TbDental,
-  TbEye,
-  TbMicroscope,
-  TbReportMedical,
-  TbVaccine,
-} from "react-icons/tb";
-
-import { CiMedicalMask } from "react-icons/ci";
-import { FaMaskFace } from "react-icons/fa6";
-
-
-
 // ================= MAP =================
 export const medicalIcons = {
   // ================= 👨‍⚕️ PEOPLE =================
-  doctor: FaUserMd,
-  nurse: FaUserNurse,
-  medicalStaff: MdMedicalServices,
+  doctor: faIcons.FaUserMd,
+  nurse: faIcons.FaUserNurse,
+  medicalStaff: mdIcons.MdMedicalServices,
 
   // ================= 🏥 FACILITIES =================
-  hospital: FaHospital,
-  hospitalAlt: MdLocalHospital,
-  clinic: FaClinicMedical,
-  ambulance: TbAmbulance,
+  hospital: faIcons.FaHospital,
+  hospitalAlt: mdIcons.MdLocalHospital,
+  clinic: faIcons.FaClinicMedical,
+  ambulance: tbIcons.TbAmbulance,
 
   // ================= 🧰 EQUIPMENT =================
-  stethoscope: FaStethoscope,
-  firstAid: TbFirstAidKit,
-  medicalKit: GiMedicalPack,
-  drip: GiMedicalDrip,
-  monitor: MdMonitorHeart,
-  microscope: TbMicroscope,
-  wheelchair: FaWheelchair,
-  mask: CiMedicalMask,
-  maskAlt: FaMaskFace,
+  stethoscope: faIcons.FaStethoscope,
+  firstAid: tbIcons.TbFirstAidKit,
+  medicalKit: giIcons.GiMedicalPack,
+  drip: giIcons.GiMedicalDrip,
+  monitor: mdIcons.MdMonitorHeart,
+  microscope: tbIcons.TbMicroscope,
+  wheelchair: faIcons.FaWheelchair,
+  mask: ciIcons.CiMedicalMask,
+  maskAlt: fa6Icons.FaMaskFace,
 
   // ================= 💊 MEDICINE =================
-  pills: FaPills,
-  capsules: FaCapsules,
-  medicine: MdMedication,
-  prescription: FaPrescriptionBottle,
-  vaccine: TbVaccine,
-  vaccineAlt: MdVaccines,
-  poison: GiPoisonBottle,
+  pills: faIcons.FaPills,
+  capsules: faIcons.FaCapsules,
+  medicine: mdIcons.MdMedication,
+  prescription: faIcons.FaPrescriptionBottle,
+  vaccine: tbIcons.TbVaccine,
+  vaccineAlt: mdIcons.MdVaccines,
+  poison: giIcons.GiPoisonBottle,
 
   // ================= 💉 TREATMENT =================
-  injection: FaSyringe,
-  bandage: FaBandAid,
-  surgery: FaProcedures,
-  blood: MdBloodtype,
-  care: FaHandHoldingMedical,
+  injection: faIcons.FaSyringe,
+  bandage: faIcons.FaBandAid,
+  surgery: faIcons.FaProcedures,
+  blood: mdIcons.MdBloodtype,
+  care: faIcons.FaHandHoldingMedical,
 
   // ================= 😷 PROTECTION =================
-  mask: MdMasks,
-  safety: MdHealthAndSafety,
+  mask: mdIcons.MdMasks,
+  safety: mdIcons.MdHealthAndSafety,
 
   // ================= ❤️ HEALTH =================
-  heart: FaHeartbeat,
-  heartAlt: GiHeartOrgan,
-  report: TbReportMedical,
-  notes: FaNotesMedical,
+  heart: faIcons.FaHeartbeat,
+  heartAlt: giIcons.GiHeartOrgan,
+  report: tbIcons.TbReportMedical,
+  notes: faIcons.FaNotesMedical,
 
   // ================= 🧍 ORGANS =================
-  brain: FaBrain,
-  brainAlt: GiBrain,
-  lungs: FaLungs,
-  lungsAlt: GiLungs,
-  liver: GiLiver,
-  kidneys: GiKidneys,
-  stomach: GiStomach,
+  brain: faIcons.FaBrain,
+  brainAlt: giIcons.GiBrain,
+  lungs: faIcons.FaLungs,
+  lungsAlt: giIcons.GiLungs,
+  liver: giIcons.GiLiver,
+  kidneys: giIcons.GiKidneys,
+  stomach: giIcons.GiStomach,
 
   // ================= 👁️ BODY =================
-  eye: FaEye,
-  eyeAlt: TbEye,
-  tooth: FaTooth,
-  dental: TbDental,
+  eye: faIcons.FaEye,
+  eyeAlt: tbIcons.TbEye,
+  tooth: faIcons.FaTooth,
+  dental: tbIcons.TbDental,
 
   // ================= 🌡️ VITALS =================
-  temperature: TbTemperature,
+  temperature: tbIcons.TbTemperature,
 };

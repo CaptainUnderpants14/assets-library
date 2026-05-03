@@ -1,123 +1,101 @@
-================================================================================
-                    REACT ICON LIBRARY - USAGE GUIDE
-================================================================================
+# assets-library
 
-================================================================================
-WITH TAILWIND(MAIN USP)
-================================================================================
-The main feature: Combine three parameters with Tailwind CSS for full control.
+Simple React icon library with grouped icons and a small `Icon` component API.
 
-<Icon className="group_iconName_size* tailwind-classes"/> (*size is optional as default is 20px)
+## Install
 
-  // Numeric size + Tailwind color
-  <Icon className="business_chartLine_50 text-red-500" />
-  // Size + color + hover effect
-  <Icon className="dev_html_40 text-blue-500 hover:scale-110" />
-  // Full styling
-  <Icon className="app_google_50 text-purple-500 hover:scale-125 transition duration-300" />
+If you are using the GitHub repo directly:
 
-WITHOUT TAILWIND
-================================================================================
-// basic
-<Icon group="business" name="chartLine" />
-// numeric size
-<Icon group="dev" name="spring" size={50} />
-OR
-// predefined sizes
-<Icon group="business" name="chartLine" size="sm" />
-<Icon group="dev" name="express" size="md" />
-<Icon group="education" name="math" size="lg" />
-<Icon group="business" name="chartLine" size="xl" />
+```bash
+npm install github:CaptainUnderpants14/assets-library
+```
 
-// numeric size + color
-<Icon group="business" name="chartLine" size={50} color="blue"/>
+## Peer dependencies
 
-SIZING OPTIONS
-================================================================================
+Make sure your app already has:
 
-ClassName DSL:
-  <Icon className="business_chartLine_40" />      // numeric pixels
-  <Icon className="business_chartLine_sm" />      // small
-  <Icon className="business_chartLine_md" />      // medium (default)
-  <Icon className="business_chartLine_lg" />      // large
-  <Icon className="business_chartLine_xl" />      // extra large
+```bash
+npm install react react-dom
+```
 
-Props:
-  <Icon group="business" name="chartLine" size={40} />
-  <Icon group="business" name="chartLine" size="sm" />
-  <Icon group="business" name="chartLine" size="md" />
-  <Icon group="business" name="chartLine" size="lg" />
-  <Icon group="business" name="chartLine" size="xl" />
+## Import
 
+```jsx
+import { Icon } from "assets-library";
+```
 
-COLORS & STYLING
-================================================================================
+## Basic usage
 
-With Tailwind CSS:
-  <Icon className="business_chartLine text-red-500" />
-  <Icon className="business_chartLine text-blue-500" />
-  <Icon className="business_chartLine text-green-500" />
+```jsx
+import { Icon } from "assets-library";
 
-With color prop:
-  <Icon group="business" name="chartLine" color="red" />
-  <Icon group="business" name="chartLine" color="blue" />
+export default function App() {
+  return (
+    <div>
+      <Icon group="business" name="chartLine" />
+      <Icon group="dev" name="react" size="lg" />
+      <Icon group="action" name="add" size={28} color="tomato" />
+    </div>
+  );
+}
+```
 
-Inherit from parent:
-  <div className="text-green-600">
-    <Icon group="business" name="chartLine" />
-  </div>
+## Using className format
 
-Hover & animation effects:
-  <Icon className="business_chartLine hover:scale-110" />
-  <Icon className="business_chartLine hover:scale-125 transition duration-300" />
+You can also pass the icon through `className`:
 
+```jsx
+<Icon className="business_chartLine" />
+<Icon className="business_chartLine_40" />
+<Icon className="dev_react_lg text-blue-500" />
+```
 
-MIXED APPROACH (CLASS + PROPS)
-================================================================================
+Format:
 
-Class defines icon, prop defines size:
-  <Icon className="business_chartLine" size={60} />
-  <Icon className="business_chartLine" size="lg" />
+```txt
+group_iconName
+group_iconName_size
+```
 
-Class defines icon + size, prop overrides:
-  <Icon className="business_chartLine_40" size="xl" />
+Examples:
 
-Class defines icon, prop defines color:
-  <Icon className="business_chartLine" color="green" />
+```txt
+business_chartLine
+business_chartLine_40
+dev_react_lg
+```
 
-Combine everything:
-  <Icon
-    className="business_chartLine_50 text-blue-500 hover:scale-110 transition"
-    size="lg"
-    color="purple"
-  />
+## Size options
 
+Preset sizes:
 
-QUICK REFERENCE
-================================================================================
-Format (ClassName DSL):
-  <Icon className="{group}_{iconName}[_{size}] [tailwind-classes]" />
+```txt
+sm = 16
+md = 20
+lg = 28
+xl = 36
+```
 
-  Examples:
-    business_chartLine
-    business_chartLine_50
-    business_chartLine_md text-red-500 hover:cursor-pointer
+You can also pass a number:
 
-Format (Props):
-  <Icon group="{group}" name="{iconName}" [size] [className] [color] />
+```jsx
+<Icon group="business" name="chartLine" size={32} />
+```
 
-  Examples:
-    <Icon group="business" name="chartLine" />
-    <Icon group="business" name="chartLine" size={50} className="text-red-500" />
-    <Icon group="business" name="chartLine" size="lg" color="blue" />
+## Props
 
+```jsx
+<Icon
+  group="business"
+  name="chartLine"
+  size="md"
+  color="currentColor"
+  className=""
+/>
+```
 
-NOTES
-================================================================================
+## Notes
 
-• Numeric sizes are flexible (any pixel value: 32, 40, 50, 60, etc.)
-• Predefined sizes map to specific pixel values
-• Minor typos are handled gracefully (e.g., "business_chartLine_40_")
-• Tailwind classes work directly in className attribute
-• Props and classes can be mixed for maximum flexibility
-• Color prop takes precedence over Tailwind color classes
+- `group` and `name` work well for normal usage.
+- `className` format is useful when you want to combine icon selection with utility classes.
+- If an icon is not found, the component returns `null`.

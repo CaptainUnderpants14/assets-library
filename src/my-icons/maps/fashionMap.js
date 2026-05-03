@@ -1,163 +1,95 @@
+import * as faIcons from "react-icons/fa";
+import * as tbIcons from "react-icons/tb";
+import * as siIcons from "react-icons/si";
+import * as giIcons from "react-icons/gi";
+import * as mdIcons from "react-icons/md";
+import * as piIcons from "react-icons/pi";
+
 // ================= IMPORTS =================
-import {
-  FaTshirt,
-  FaShoePrints,
-  FaShoppingBag,
-  FaHatCowboy,
-  FaUserTie,
-  FaGem,
-  FaGlasses,
-  FaRing,
-  FaCrown,
-  FaShoppingCart,
-  FaPaintBrush,
-} from "react-icons/fa";
-
-import {
-  TbHanger,
-  TbDroplet,
-  TbBath,
-  TbShirt,
-  TbPerfume,
-  TbIroning,
-} from "react-icons/tb";
-
-import {
-  SiNike,
-  SiAdidas,
-  SiZara,
-  SiPuma,
-  SiReebok,
-  SiUnderarmour,
-} from "react-icons/si";
-
-import {
-  GiHighHeel,
-  GiLipstick,
-  GiDress,
-  GiLargeDress,
-  GiMonclerJacket,
-  GiConverseShoe,
-  GiSunglasses,
-  GiPearlNecklace,
-  GiEarrings,
-  GiComb,
-  GiClothes,
-  GiAmpleDress,
-  GiArmoredPants,
-  GiWinterGloves,
-  GiBoots,
-  GiRunningShoe,
-  GiBallerinaShoes,
-  GiBigDiamondRing,
-  GiNecklaceDisplay,
-  GiMirrorMirror,
-  GiRazor,
-  GiPerfumeBottle,
-  GiShoppingCart,
-  GiBackpack,
-  GiHanger,
-  GiSlippers,
-  GiHealthPotion,
-  GiSafetyPin
-} from "react-icons/gi";
-
-import {
-  MdFaceRetouchingNatural,
-  MdOutlineSpa,
-  MdCheckroom,
-  MdOutlineShoppingCart,
-  MdOutlineLocalMall,
-} from "react-icons/md";
-
-import {
-    PiPants
-} from "react-icons/pi"
-
 // ================= MAP =================
 export const fashionIcons = {
   // ================= 👕 CLOTHING =================
-  tshirt: FaTshirt,
-  shirt: TbShirt,
-  clothes: GiClothes,
-  outfit: MdCheckroom,
-  dress: GiDress,
-  gown: GiLargeDress,
-  fancyDress: GiAmpleDress,
-  jacket: GiMonclerJacket,
-  pants: GiArmoredPants,
-  pantsAlt: PiPants,
+  tshirt: faIcons.FaTshirt,
+  shirt: tbIcons.TbShirt,
+  clothes: giIcons.GiClothes,
+  outfit: mdIcons.MdCheckroom,
+  dress: giIcons.GiDress,
+  gown: giIcons.GiLargeDress,
+  fancyDress: giIcons.GiAmpleDress,
+  jacket: giIcons.GiMonclerJacket,
+  pants: giIcons.GiArmoredPants,
+  pantsAlt: piIcons.PiPants,
 
 
   // storage
-  hanger: TbHanger,
-  hangerAlt: GiHanger,
-  wardrobe: TbHanger,
+  hanger: tbIcons.TbHanger,
+  hangerAlt: giIcons.GiHanger,
+  wardrobe: tbIcons.TbHanger,
 
   // ================= 👠 FOOTWEAR =================
-  shoes: FaShoePrints,
-  sneaker: GiConverseShoe,
-  running: GiRunningShoe,
-  heels: GiHighHeel,
-  boots: GiBoots,
-  flats: GiBallerinaShoes,
-  slipper: GiSlippers,
-  slippers: GiSlippers,
-  footwear: GiRunningShoe,
+  shoes: faIcons.FaShoePrints,
+  sneaker: giIcons.GiConverseShoe,
+  running: giIcons.GiRunningShoe,
+  heels: giIcons.GiHighHeel,
+  boots: giIcons.GiBoots,
+  flats: giIcons.GiBallerinaShoes,
+  slipper: giIcons.GiSlippers,
+  slippers: giIcons.GiSlippers,
+  footwear: giIcons.GiRunningShoe,
 
   // ================= 👜 ACCESSORIES =================
-  bag: FaShoppingBag,
-  handbag: MdOutlineLocalMall,
-  backpack: GiBackpack,
-  sunglasses: GiSunglasses,
-  glasses: FaGlasses,
-  hat: FaHatCowboy,
-  tie: FaUserTie,
-  crown: FaCrown,
-  brush: FaPaintBrush,
+  bag: faIcons.FaShoppingBag,
+  handbag: mdIcons.MdOutlineLocalMall,
+  backpack: giIcons.GiBackpack,
+  sunglasses: giIcons.GiSunglasses,
+  glasses: faIcons.FaGlasses,
+  hat: faIcons.FaHatCowboy,
+  tie: faIcons.FaUserTie,
+  crown: faIcons.FaCrown,
+  brush: faIcons.FaPaintBrush,
 
   // ================= 💎 JEWELRY =================
-  jewelry: FaGem,
-  necklace: GiPearlNecklace,
-  necklaceAlt: GiNecklaceDisplay,
-  earrings: GiEarrings,
-  ring: FaRing,
-  diamond: GiBigDiamondRing,
+  jewelry: faIcons.FaGem,
+  necklace: giIcons.GiPearlNecklace,
+  necklaceAlt: giIcons.GiNecklaceDisplay,
+  earrings: giIcons.GiEarrings,
+  ring: faIcons.FaRing,
+  diamond: giIcons.GiBigDiamondRing,
 
   // ================= 💄 BEAUTY =================
-  makeup: MdFaceRetouchingNatural,
-  lipstick: GiLipstick,
-  skincare: MdOutlineSpa,
-  moisturizer: TbDroplet,
-  lotion: TbBath,
-  skincareCream: GiHealthPotion,
+  makeup: mdIcons.MdFaceRetouchingNatural,
+  lipstick: giIcons.GiLipstick,
+  skincare: mdIcons.MdOutlineSpa,
+  moisturizer: tbIcons.TbDroplet,
+  lotion: tbIcons.TbBath,
+  skincareCream: giIcons.GiHealthPotion,
 
-  perfume: TbPerfume,
-  perfumeBottle: GiPerfumeBottle,
+  perfume: tbIcons.TbPerfume,
+  perfumeBottle: giIcons.GiPerfumeBottle,
 
-  grooming: GiComb,
-  mirror: GiMirrorMirror,
-  razor: GiRazor,
+  grooming: giIcons.GiComb,
+  mirror: giIcons.GiMirrorMirror,
+  razor: giIcons.GiRazor,
 
   // ================= 🛍️ SHOPPING =================
-  shopping: MdOutlineShoppingCart,
-  cart: FaShoppingCart,
-  cartAlt: GiShoppingCart,
-  bagShopping: FaShoppingBag,
-  mall: MdOutlineLocalMall,
+  shopping: mdIcons.MdOutlineShoppingCart,
+  cart: faIcons.FaShoppingCart,
+  cartAlt: giIcons.GiShoppingCart,
+  bagShopping: faIcons.FaShoppingBag,
+  mall: mdIcons.MdOutlineLocalMall,
 
   // ================= 🧼 CARE =================
-  ironing: TbIroning,
-  gloves: GiWinterGloves,
-  safetyPin: GiSafetyPin,
+  ironing: tbIcons.TbIroning,
+  gloves: giIcons.GiWinterGloves,
+  safetyPin: giIcons.GiSafetyPin,
 
   // ================= 🏷️ BRANDS =================
-  nike: SiNike,
-  adidas: SiAdidas,
-  zara: SiZara,
+  nike: siIcons.SiNike,
+  adidas: siIcons.SiAdidas,
+  zara: siIcons.SiZara,
 
-  puma: SiPuma,
-  reebok: SiReebok,
-  underarmour: SiUnderarmour,
+  puma: siIcons.SiPuma,
+  reebok: siIcons.SiReebok,
+  underarmour: siIcons.SiUnderarmour,
 
 };

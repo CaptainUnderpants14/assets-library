@@ -1,102 +1,68 @@
+import * as faIcons from "react-icons/fa";
+import * as mdIcons from "react-icons/md";
+import * as giIcons from "react-icons/gi";
+import * as tbIcons from "react-icons/tb";
+
 // ================= IMPORTS =================
-import {
-  FaHammer,
-  FaWrench,
-  FaScrewdriver,
-  FaCut,
-  FaRuler,
-} from "react-icons/fa";
-
-import {
-  MdConstruction,
-  MdBuild,
-  MdSettings,
-} from "react-icons/md";
-
-import {
-  GiClaw,
-  GiHatchet,
-  GiHandSaw,
-  GiWrench,
-  GiScrew,
-  GiChisel,
-  GiClamp,
-  GiTrowel,
-  GiSpade,
-  GiRake,
-  GiDrill,
-  GiPaintBrush,
-  GiToolbox,
-  GiBurningEmbers,
-  GiStapler,
-} from "react-icons/gi";
-
-import {
-  TbRuler,
-  TbClipboard,
-  TbRuler3,
-  TbTool
-} from "react-icons/tb";
-
 // ================= MAP =================
 export const toolsIcons = {
   // 🔨 HAMMERS
-  hammer: FaHammer,
-  clawHammer: GiClaw,
+  hammer: faIcons.FaHammer,
+  clawHammer: giIcons.GiClaw,
 
   // 🔧 WRENCH / DRIVER
-  wrench: FaWrench,
+  wrench: faIcons.FaWrench,
 //   wrenchAlt: TbWrench,
-  ratchet: GiWrench,
-  screwdriver: FaScrewdriver,
+  ratchet: giIcons.GiWrench,
+  screwdriver: faIcons.FaScrewdriver,
 //   screwdriverAlt: TbScrewdriver,
 
   // ✂️ CUTTING / GRIP
-  scissors: FaCut,
+  scissors: faIcons.FaCut,
 
   // ⚙️ FASTENERS
-  screw: GiScrew,
+  screw: giIcons.GiScrew,
 
   // 🪚 SAWS
-  handsaw: GiHandSaw,
+  handsaw: giIcons.GiHandSaw,
 
   // 🪓 AXE / CHISEL
-  hatchet: GiHatchet,
-  chisel: GiChisel,
+  hatchet: giIcons.GiHatchet,
+  chisel: giIcons.GiChisel,
 
   // ⚡ POWER TOOLS
-  drill: GiDrill,
-  drillAlt: MdBuild,
-  nailGun: GiStapler,
-  heatGun: GiBurningEmbers,
+  drill: giIcons.GiDrill,
+  drillAlt: mdIcons.MdBuild,
+  nailGun: giIcons.GiStapler,
+  heatGun: giIcons.GiBurningEmbers,
 
   // 📏 MEASURING
-  ruler: TbRuler,
-  rulerAlt: FaRuler,
-  chalkLine: TbClipboard,
-  square: TbRuler3,
+  ruler: tbIcons.TbRuler,
+  rulerAlt: faIcons.FaRuler,
+  chalkLine: tbIcons.TbClipboard,
+  square: tbIcons.TbRuler3,
 
   // 🔌 ELECTRICAL
-  multimeter: MdSettings,
+  multimeter: mdIcons.MdSettings,
 
 
   // 🧱 CLAMPING
-  clamp: GiClamp,
+  clamp: giIcons.GiClamp,
 
   // 🧱 MASONRY
-  trowel: GiTrowel,
-  caulkingGun: GiPaintBrush,
+  trowel: giIcons.GiTrowel,
+  caulkingGun: giIcons.GiPaintBrush,
 
   // 🌿 GARDEN
-  spade: GiSpade,
-  rake: GiRake,
-  shears: FaCut,
+  spade: giIcons.GiSpade,
+  rake: giIcons.GiRake,
+  shears: faIcons.FaCut,
 
   // 🌿 OUTDOOR
-  trimmer: GiRake,
+  trimmer: giIcons.GiRake,
 
   // 🛠️ GENERAL
-  toolbox: GiToolbox,
-  tools: TbTool,
-  build: MdConstruction,
+  toolbox: giIcons.GiToolbox,
+  tools: tbIcons.TbTool,
+  build: mdIcons.MdConstruction,
 };

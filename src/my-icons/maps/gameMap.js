@@ -1,154 +1,100 @@
+import * as faIcons from "react-icons/fa";
+import * as mdIcons from "react-icons/md";
+import * as giIcons from "react-icons/gi";
+import * as tbIcons from "react-icons/tb";
+
 // ================= IMPORTS =================
-import {
-  FaFutbol,
-  FaFootballBall,
-  FaBasketballBall,
-  FaVolleyballBall,
-  FaBaseballBall,
-  FaTableTennis,
-  FaGolfBall,
-  FaRunning,
-  FaSwimmer,
-  FaHorse,
-  FaCar,
-  FaChess,
-  FaDice,
-} from "react-icons/fa";
-
-import {
-  MdSportsSoccer,
-  MdSportsBasketball,
-  MdSportsVolleyball,
-  MdSportsCricket,
-  MdSportsBaseball,
-  MdSportsTennis,
-  MdSportsGolf,
-  MdSportsEsports,
-} from "react-icons/md";
-
-import {
-  GiSoccerBall,
-  GiBasketballBall,
-  GiCricketBat,
-  GiBaseballBat,
-  GiTennisBall,
-  GiPingPongBat,
-  GiBoxingGlove,
-  GiArcheryTarget,
-  GiSkis,
-  GiSnowboard,
-  GiSurfBoard,
-  GiBoatFishing,
-  GiMountainClimbing,
-  GiParachute,
-  GiRaceCar,
-  GiCardPlay,
-  GiDart,
-  GiSoccerKick,
-  GiWhip,
-} from "react-icons/gi";
-
-import {
-  TbBallFootball,
-  TbBallBasketball,
-  TbBallVolleyball,
-  TbBallTennis,
-  TbBallBowling,
-  TbHorseToy,
-  TbDeviceGamepad2,
-} from "react-icons/tb";
-
 // ================= MAP =================
 export const gameIcons = {
   // ================= 🏆 TEAM SPORTS =================
-  football: FaFutbol,
-  soccerMd: MdSportsSoccer,
-  soccerAlt: GiSoccerBall,
+  football: faIcons.FaFutbol,
+  soccerMd: mdIcons.MdSportsSoccer,
+  soccerAlt: giIcons.GiSoccerBall,
 
-  americanFootball: FaFootballBall,
-  rugby: TbBallFootball,
+  americanFootball: faIcons.FaFootballBall,
+  rugby: tbIcons.TbBallFootball,
 
-  basketball: FaBasketballBall,
-  basketballMd: MdSportsBasketball,
-  basketballAlt: GiBasketballBall,
+  basketball: faIcons.FaBasketballBall,
+  basketballMd: mdIcons.MdSportsBasketball,
+  basketballAlt: giIcons.GiBasketballBall,
 
-  volleyball: FaVolleyballBall,
-  volleyballMd: MdSportsVolleyball,
-  volleyballAlt: TbBallVolleyball,
+  volleyball: faIcons.FaVolleyballBall,
+  volleyballMd: mdIcons.MdSportsVolleyball,
+  volleyballAlt: tbIcons.TbBallVolleyball,
 
-  cricket: GiCricketBat,
-  cricketMd: MdSportsCricket,
+  cricket: giIcons.GiCricketBat,
+  cricketMd: mdIcons.MdSportsCricket,
 
-  baseball: FaBaseballBall,
-  baseballMd: MdSportsBaseball,
-  baseballBat: GiBaseballBat,
+  baseball: faIcons.FaBaseballBall,
+  baseballMd: mdIcons.MdSportsBaseball,
+  baseballBat: giIcons.GiBaseballBat,
 
-  kabaddi: GiSoccerKick,
-  netball: TbBallBasketball,
+  kabaddi: giIcons.GiSoccerKick,
+  netball: tbIcons.TbBallBasketball,
 
   // ================= 🎾 RACKET SPORTS =================
-  tennis: GiTennisBall,
-  tennisMd: MdSportsTennis,
-  badminton: TbBallTennis,
-  tableTennis: FaTableTennis,
-  squash: GiPingPongBat,
-  pickleball: TbBallTennis,
+  tennis: giIcons.GiTennisBall,
+  tennisMd: mdIcons.MdSportsTennis,
+  badminton: tbIcons.TbBallTennis,
+  tableTennis: faIcons.FaTableTennis,
+  squash: giIcons.GiPingPongBat,
+  pickleball: tbIcons.TbBallTennis,
 
   // ================= ⚔️ COMBAT =================
-  boxing: GiBoxingGlove,
-  archery: GiArcheryTarget,
+  boxing: giIcons.GiBoxingGlove,
+  archery: giIcons.GiArcheryTarget,
 
   // ================= ❄️ WINTER =================
-  skiing: GiSkis,
-  snowboarding: GiSnowboard,
+  skiing: giIcons.GiSkis,
+  snowboarding: giIcons.GiSnowboard,
 
   // ================= ⚾ BALL SPORTS =================
-  golf: FaGolfBall,
-  golfMd: MdSportsGolf,
-  bowling: TbBallBowling,
-  dodgeball: TbBallBasketball,
+  golf: faIcons.FaGolfBall,
+  golfMd: mdIcons.MdSportsGolf,
+  bowling: tbIcons.TbBallBowling,
+  dodgeball: tbIcons.TbBallBasketball,
 
   // ================= 🏃 ATHLETICS =================
-  running: FaRunning,
+  running: faIcons.FaRunning,
 
   // ================= 🌊 WATER =================
-  swimming: FaSwimmer,
-  surfing: GiSurfBoard,
-  fishing: GiBoatFishing,
+  swimming: faIcons.FaSwimmer,
+  surfing: giIcons.GiSurfBoard,
+  fishing: giIcons.GiBoatFishing,
 
 
   // ================= 🐎 EQUESTRIAN =================
-  horseRacing: FaHorse,
-  polo: TbHorseToy,
+  horseRacing: faIcons.FaHorse,
+  polo: tbIcons.TbHorseToy,
 
   // ================= 🏎️ MOTORSPORT =================
-  formula1: GiRaceCar,
-  nascar: FaCar,
+  formula1: giIcons.GiRaceCar,
+  nascar: faIcons.FaCar,
 
   // ================= 🪂 EXTREME =================
-  climbing: GiMountainClimbing,
-  skydiving: GiParachute,
+  climbing: giIcons.GiMountainClimbing,
+  skydiving: giIcons.GiParachute,
 
   // ================= 🧠 MIND GAMES =================
-  chess: FaChess,
-  poker: GiCardPlay,
-  darts: GiDart,
-  esports: MdSportsEsports,
+  chess: faIcons.FaChess,
+  poker: giIcons.GiCardPlay,
+  darts: giIcons.GiDart,
+  esports: mdIcons.MdSportsEsports,
 
 
   // ================= ♿ PARA SPORTS =================
-  wheelchairBasketball: MdSportsBasketball,
-  wheelchairTennis: MdSportsTennis,
+  wheelchairBasketball: mdIcons.MdSportsBasketball,
+  wheelchairTennis: mdIcons.MdSportsTennis,
 
   // ================= ✨ FANTASY =================
-  quidditch: GiSoccerBall,
-  podracing: GiRaceCar,
+  quidditch: giIcons.GiSoccerBall,
+  podracing: giIcons.GiRaceCar,
 
   // ================= 🛡️ HISTORICAL =================
-  jousting: GiWhip,
-  pankration: GiBoxingGlove,
+  jousting: giIcons.GiWhip,
+  pankration: giIcons.GiBoxingGlove,
 
   // ================= 🎪 KIDS =================
-  marbles: FaDice,
-  gamePad: TbDeviceGamepad2
+  marbles: faIcons.FaDice,
+  gamePad: tbIcons.TbDeviceGamepad2
 };

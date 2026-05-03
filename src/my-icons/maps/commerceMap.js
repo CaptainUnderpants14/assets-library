@@ -1,206 +1,117 @@
+import * as faIcons from "react-icons/fa";
+import * as mdIcons from "react-icons/md";
+import * as tbIcons from "react-icons/tb";
+import * as giIcons from "react-icons/gi";
+import * as riIcons from "react-icons/ri";
+
 // ================= IMPORTS =================
-import {
-  FaShoppingCart,
-  FaShoppingBag,
-  FaStore,
-  FaTruck,
-  FaBox,
-  FaBoxes,
-  FaBarcode,
-  FaQrcode,
-  FaMoneyBill,
-  FaCreditCard,
-  FaWallet,
-  FaReceipt,
-  FaTag,
-  FaTags,
-  FaGift,
-  FaPercent,
-  FaSearch,
-  FaFilter,
-  FaList,
-  FaStar,
-  FaUser,
-  FaUsers,
-  FaHeadset,
-  FaComments,
-  FaChartLine,
-  FaChartBar,
-  FaWarehouse,
-  FaClipboardList,
-  FaFileInvoiceDollar,
-} from "react-icons/fa";
-
-import {
-  MdLocalShipping,
-  MdInventory,
-  MdPayments,
-  MdAttachMoney,
-  MdDiscount,
-  MdShoppingCartCheckout,
-  MdStorefront,
-  MdQrCode,
-  MdBarChart,
-  MdAnalytics,
-} from "react-icons/md";
-
-import {
-  TbTruckDelivery,
-  TbPackage,
-  TbPackages,
-  TbReceipt,
-  TbCreditCard,
-  TbCash,
-  TbTag,
-  TbTags,
-  TbShoppingCart,
-  TbShoppingBag,
-  TbChartPie,
-  TbChartHistogram,
-  TbUser,
-  TbUsers,
-  TbHeadset,
-  TbClipboardList,
-} from "react-icons/tb";
-
-import {
-  GiCardboardBox,
-  GiTakeMyMoney,
-  GiPayMoney,
-  GiMoneyStack,
-  GiShoppingCart,
-} from "react-icons/gi";
-
-import {
-  FaTicketAlt,
-  FaCut,
-} from "react-icons/fa";
-
-import {
-  MdLocalOffer,
-  MdCardGiftcard,
-  MdSell,
-} from "react-icons/md";
-
-import {
-  TbDiscount,
-  TbPercentage,
-  TbTicket,
-  TbGift,
-} from "react-icons/tb";
-
-import {
-  RiCoupon3Line,
-  RiCoupon2Line,
-} from "react-icons/ri";
-
 // ================= MAP =================
 export const commerceIcons = {
   // ================= 🛒 SHOPPING =================
-  cart: FaShoppingCart,
-  cartAlt: TbShoppingCart,
-  cartCheckout: MdShoppingCartCheckout,
-  cartGi: GiShoppingCart,
+  cart: faIcons.FaShoppingCart,
+  cartAlt: tbIcons.TbShoppingCart,
+  cartCheckout: mdIcons.MdShoppingCartCheckout,
+  cartGi: giIcons.GiShoppingCart,
 
-  bag: FaShoppingBag,
-  bagAlt: TbShoppingBag,
+  bag: faIcons.FaShoppingBag,
+  bagAlt: tbIcons.TbShoppingBag,
 
-  store: FaStore,
-  storefront: MdStorefront,
+  store: faIcons.FaStore,
+  storefront: mdIcons.MdStorefront,
 
   // ================= 🚚 DELIVERY =================
-  truck: FaTruck,
-  shipping: MdLocalShipping,
-  delivery: TbTruckDelivery,
+  truck: faIcons.FaTruck,
+  shipping: mdIcons.MdLocalShipping,
+  delivery: tbIcons.TbTruckDelivery,
 
   // ================= 📦 PACKAGING =================
-  box: FaBox,
-  boxAlt: GiCardboardBox,
-  package: TbPackage,
-  packages: TbPackages,
-  boxes: FaBoxes,
+  box: faIcons.FaBox,
+  boxAlt: giIcons.GiCardboardBox,
+  package: tbIcons.TbPackage,
+  packages: tbIcons.TbPackages,
+  boxes: faIcons.FaBoxes,
 
-  warehouse: FaWarehouse,
-  inventory: MdInventory,
+  warehouse: faIcons.FaWarehouse,
+  inventory: mdIcons.MdInventory,
 
   // ================= 💰 PAYMENTS =================
-  money: FaMoneyBill,
-  moneyAlt2: MdAttachMoney,
-  moneyAlt: GiMoneyStack,
-  cash: TbCash,
-  pay: GiPayMoney,
-  payment: MdPayments,
-  wallet: FaWallet,
-  creditCard: FaCreditCard,
-  creditCardAlt: TbCreditCard,
+  money: faIcons.FaMoneyBill,
+  moneyAlt2: mdIcons.MdAttachMoney,
+  moneyAlt: giIcons.GiMoneyStack,
+  cash: tbIcons.TbCash,
+  pay: giIcons.GiPayMoney,
+  payment: mdIcons.MdPayments,
+  wallet: faIcons.FaWallet,
+  creditCard: faIcons.FaCreditCard,
+  creditCardAlt: tbIcons.TbCreditCard,
 
-  receipt: FaReceipt,
-  receiptAlt: TbReceipt,
-  invoice: FaFileInvoiceDollar,
+  receipt: faIcons.FaReceipt,
+  receiptAlt: tbIcons.TbReceipt,
+  invoice: faIcons.FaFileInvoiceDollar,
 
   // ================= 🏷️ PRICING =================
-  tag: FaTag,
-  tagAlt: TbTag,
-  tags: FaTags,
-  tagsAlt: TbTags,
+  tag: faIcons.FaTag,
+  tagAlt: tbIcons.TbTag,
+  tags: faIcons.FaTags,
+  tagsAlt: tbIcons.TbTags,
 
-  discount: MdDiscount,
-  percent: FaPercent,
-  offer: FaGift,
+  discount: mdIcons.MdDiscount,
+  percent: faIcons.FaPercent,
+  offer: faIcons.FaGift,
 
   // ================= 🔍 SEARCH & FILTER =================
-  search: FaSearch,
-  filter: FaFilter,
-  list: FaList,
+  search: faIcons.FaSearch,
+  filter: faIcons.FaFilter,
+  list: faIcons.FaList,
 
   // ================= ⭐ REVIEWS =================
-  rating: FaStar,
+  rating: faIcons.FaStar,
 
   // ================= 👤 CUSTOMER =================
-  user: FaUser,
-  userAlt: TbUser,
-  users: FaUsers,
-  usersAlt: TbUsers,
+  user: faIcons.FaUser,
+  userAlt: tbIcons.TbUser,
+  users: faIcons.FaUsers,
+  usersAlt: tbIcons.TbUsers,
 
-  support: FaHeadset,
-  supportAlt: TbHeadset,
-  chat: FaComments,
+  support: faIcons.FaHeadset,
+  supportAlt: tbIcons.TbHeadset,
+  chat: faIcons.FaComments,
 
   // ================= 📊 ANALYTICS =================
-  chartLine: FaChartLine,
-  chartBar: FaChartBar,
-  chartBarMd: MdBarChart,
-  analytics: MdAnalytics,
-  pieChart: TbChartPie,
-  histogram: TbChartHistogram,
+  chartLine: faIcons.FaChartLine,
+  chartBar: faIcons.FaChartBar,
+  chartBarMd: mdIcons.MdBarChart,
+  analytics: mdIcons.MdAnalytics,
+  pieChart: tbIcons.TbChartPie,
+  histogram: tbIcons.TbChartHistogram,
 
   // ================= 📋 ORDERS =================
-  orders: FaClipboardList,
-  ordersAlt: TbClipboardList,
+  orders: faIcons.FaClipboardList,
+  ordersAlt: tbIcons.TbClipboardList,
 
   // ================= 🔖 TRACKING =================
-  barcode: FaBarcode,
-  qr: FaQrcode,
-  qrMd: MdQrCode,
+  barcode: faIcons.FaBarcode,
+  qr: faIcons.FaQrcode,
+  qrMd: mdIcons.MdQrCode,
 
   // ================= 💼 BUSINESS =================
-  revenue: GiTakeMyMoney,
-    discountAlt: TbDiscount,
-    offerAlt: MdLocalOffer,
+  revenue: giIcons.GiTakeMyMoney,
+    discountAlt: tbIcons.TbDiscount,
+    offerAlt: mdIcons.MdLocalOffer,
 
-    percentAlt: TbPercentage,
-    sale: MdSell,
+    percentAlt: tbIcons.TbPercentage,
+    sale: mdIcons.MdSell,
 
-    coupon: RiCoupon3Line,
-    couponAlt: RiCoupon2Line,
+    coupon: riIcons.RiCoupon3Line,
+    couponAlt: riIcons.RiCoupon2Line,
 
-    voucher: FaTicketAlt,
-    voucherAlt: TbTicket,
+    voucher: faIcons.FaTicketAlt,
+    voucherAlt: tbIcons.TbTicket,
 
-    gift: FaGift,
-    giftMd: MdCardGiftcard,
-    giftAlt: TbGift,
+    gift: faIcons.FaGift,
+    giftMd: mdIcons.MdCardGiftcard,
+    giftAlt: tbIcons.TbGift,
 
-    deal: FaCut,
-    cashback: TbCash,
+    deal: faIcons.FaCut,
+    cashback: tbIcons.TbCash,
 };

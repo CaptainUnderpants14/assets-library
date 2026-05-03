@@ -1,156 +1,90 @@
-import {
-  // Devicon
-  DiHtml5,
-  DiCss3,
-  DiJavascript1,
-  DiPython,
-  DiPhp,
-  DiJava,
-  DiRuby,
-  DiGo,
-  DiRust,
-  DiReact,
-  DiNodejs,
-  DiDjango,
-  DiLaravel,
-  DiDocker,
-  DiMongodb,
-  DiMysql,
-  DiPostgresql,
-  DiRedis,
-  DiFirebase,
-  DiNpm,
-  DiGit,
-  DiGithubBadge,
-  DiAws,
-  DiGoogleCloudPlatform,
-  DiVisualstudio,
-  DiLinux,
-  DiWindows,
-} from "react-icons/di";
-
-import {
-  SiHtml5,
-  SiTypescript,
-  SiVuedotjs,
-  SiAngular,
-  SiSvelte,
-  SiNextdotjs,
-  SiExpress,
-  SiSpring,
-  SiSpringboot,
-  SiRubyonrails,
-  SiSqlite,
-  SiApachecouchdb,
-  SiYarn,
-  SiWebpack,
-  SiVagrant,
-  SiNetlify,
-  SiVercel,
-  SiSublimetext,
-  SiJetbrains,
-  SiJest,
-  SiMocha,
-
-  // 🔐 Auth
-  SiSupabase,
-} from "react-icons/si";
-
-import {
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaNode,
-  FaGitAlt,
-  FaApple,
-  FaAndroid
-} from "react-icons/fa";
-
-import { GrAndroid } from "react-icons/gr";
-
+import * as diIcons from "react-icons/di";
+import * as siIcons from "react-icons/si";
+import * as faIcons from "react-icons/fa";
+import * as grIcons from "react-icons/gr";
 
 // FINAL CLEAN MAP
 export const devIcons = {
   // 🌐 Languages
-  html: DiHtml5,
-  html5: SiHtml5,
+  html: diIcons.DiHtml5,
+  html5: siIcons.SiHtml5,
 
-  css: DiCss3,
-  css3: FaCss3Alt,
+  css: diIcons.DiCss3,
+  css3: faIcons.FaCss3Alt,
 
-  javascript: DiJavascript1,
-  js: FaJs,
+  javascript: diIcons.DiJavascript1,
+  js: faIcons.FaJs,
 
-  typescript: SiTypescript,
-  ts: SiTypescript,
+  typescript: siIcons.SiTypescript,
+  ts: siIcons.SiTypescript,
 
-  python: DiPython,
-  php: DiPhp,
-  java: DiJava,
-  ruby: DiRuby,
-  go: DiGo,
-  rust: DiRust,
+  python: diIcons.DiPython,
+  php: diIcons.DiPhp,
+  java: diIcons.DiJava,
+  ruby: diIcons.DiRuby,
+  go: diIcons.DiGo,
+  rust: diIcons.DiRust,
 
   // 🎨 Frontend
-  react: DiReact,
-  reactAlt: FaReact,
+  react: diIcons.DiReact,
+  reactAlt: faIcons.FaReact,
 
-  vue: SiVuedotjs,
-  angular: SiAngular,
-  svelte: SiSvelte,
-  nextjs: SiNextdotjs,
+  vue: siIcons.SiVuedotjs,
+  angular: siIcons.SiAngular,
+  svelte: siIcons.SiSvelte,
+  nextjs: siIcons.SiNextdotjs,
 
   // 🔧 Backend
-  nodejs: DiNodejs,
-  node: FaNode,
+  nodejs: diIcons.DiNodejs,
+  node: faIcons.FaNode,
 
-  express: SiExpress,
-  django: DiDjango,
-  spring: SiSpring,
-  springboot: SiSpringboot,
-  rails: SiRubyonrails,
-  laravel: DiLaravel,
-  docker: DiDocker,
+  express: siIcons.SiExpress,
+  django: diIcons.DiDjango,
+  spring: siIcons.SiSpring,
+  springboot: siIcons.SiSpringboot,
+  rails: siIcons.SiRubyonrails,
+  laravel: diIcons.DiLaravel,
+  docker: diIcons.DiDocker,
 
   // 💾 Databases
-  mongodb: DiMongodb,
-  mysql: DiMysql,
-  postgres: DiPostgresql,
-  redis: DiRedis,
-  firebase: DiFirebase,
-  sqlite: SiSqlite,
-  couchdb: SiApachecouchdb,
+  mongodb: diIcons.DiMongodb,
+  mysql: diIcons.DiMysql,
+  postgres: diIcons.DiPostgresql,
+  redis: diIcons.DiRedis,
+  firebase: diIcons.DiFirebase,
+  sqlite: siIcons.SiSqlite,
+  couchdb: siIcons.SiApachecouchdb,
 
   // 📦 Tools
-  npm: DiNpm,
-  yarn: SiYarn,
-  git: DiGit,
-  gitAlt: FaGitAlt,
-  github: DiGithubBadge,
-  webpack: SiWebpack,
-  vagrant: SiVagrant,
+  npm: diIcons.DiNpm,
+  yarn: siIcons.SiYarn,
+  git: diIcons.DiGit,
+  gitAlt: faIcons.FaGitAlt,
+  github: diIcons.DiGithubBadge,
+  webpack: siIcons.SiWebpack,
+  vagrant: siIcons.SiVagrant,
 
   // ☁️ Cloud
-  aws: DiAws,
-  gcp: DiGoogleCloudPlatform,
-  netlify: SiNetlify,
-  vercel: SiVercel,
+  aws: diIcons.DiAws,
+  gcp: diIcons.DiGoogleCloudPlatform,
+  netlify: siIcons.SiNetlify,
+  vercel: siIcons.SiVercel,
 
   // 🛠️ Editors / OS
-  visualstudio: DiVisualstudio,
-  sublime: SiSublimetext,
-  jetbrains: SiJetbrains,
-  linux: DiLinux,
-  android: FaAndroid,
-  androidAlt: GrAndroid,
-  windows: DiWindows,
-  mac: FaApple,
+  visualstudio: diIcons.DiVisualstudio,
+  sublime: siIcons.SiSublimetext,
+  jetbrains: siIcons.SiJetbrains,
+  linux: diIcons.DiLinux,
+  android: faIcons.FaAndroid,
+  androidAlt: grIcons.GrAndroid,
+  windows: diIcons.DiWindows,
+  mac: faIcons.FaApple,
 
   // 🔐 Authentication / Identity
-  supabaseAuth: SiSupabase,
-  firebaseAuth: DiFirebase,
+  supabaseAuth: siIcons.SiSupabase,
+  firebaseAuth: diIcons.DiFirebase,
 
   // 🧪 Testing
-  jest: SiJest,
-  mocha: SiMocha,
+  jest: siIcons.SiJest,
+  mocha: siIcons.SiMocha,
 };

@@ -1,157 +1,98 @@
+import * as faIcons from "react-icons/fa";
+import * as giIcons from "react-icons/gi";
+import * as mdIcons from "react-icons/md";
+import * as tbIcons from "react-icons/tb";
+import * as ciIcons from "react-icons/ci";
+import * as luIcons from "react-icons/lu";
+import * as fiIcons from "react-icons/fi";
+import * as tiIcons from "react-icons/ti";
+
 // ================= IMPORTS =================
 
 // 🍔 Food basics (FA)
-import {
-  FaAppleAlt,
-  FaPizzaSlice,
-  FaHamburger,
-  FaHotdog,
-  FaIceCream,
-  FaCarrot,
-  FaFish,
-  FaEgg,
-  FaCoffee,
-  FaBeer,
-  FaMugHot,
-} from "react-icons/fa";
-
 // 🍜 Detailed food (GI)
-import {
-  GiKnifeFork,
-  GiSpoon,
-  GiForkKnifeSpoon,
-  GiFullPizza,
-  GiChickenOven,
-  GiSteak,
-  GiSushis,
-  GiNoodles,
-  GiCupcake,
-  GiDonut,
-  GiFruitBowl,
-  GiBanana,
-  GiStrawberry,
-  GiWatermelon,
-  GiOrangeSlice,
-  GiGrapes,
-  GiMilkCarton,
-  GiCheeseWedge,
-  GiBread,
-  GiSandwich,
-  GiFrenchFries,
-  GiCookingPot,
-  GiGasStove,
-  GiCoffeeBeans,
-  GiCoffeeCup,
-  GiCoffeeMug,
-} from "react-icons/gi";
-
 // 🍽️ Material icons
-import {
-  MdRestaurant,
-  MdFastfood,
-  MdLocalDining,
-  MdOutlineLunchDining,
-  MdDinnerDining,
-  MdOutlineBreakfastDining,
-  MdLocalCafe,
-  MdCoffee,
-  MdCoffeeMaker,
-  MdOutlineCoffee,
-  MdOutlineCoffeeMaker,
-} from "react-icons/md";
-
 // 🧰 Tabler icons
-import {
-  TbToolsKitchen,
-  TbGlassFull,
-  TbBottle,
-} from "react-icons/tb";
-
 // 🆕 Coffee extras
-import { CiCoffeeBean, CiCoffeeCup } from "react-icons/ci";
-import { LuCoffee } from "react-icons/lu";
-import { FiCoffee } from "react-icons/fi";
-import { TiCoffee } from "react-icons/ti";
-
 // ================= MAP =================
 export const foodIcons = {
   // 🍽️ General Food
-  food: MdRestaurant,
-  meal: MdLocalDining,
-  fastfood: MdFastfood,
+  food: mdIcons.MdRestaurant,
+  meal: mdIcons.MdLocalDining,
+  fastfood: mdIcons.MdFastfood,
 
   // 🍳 Meals
-  breakfast: MdOutlineBreakfastDining,
-  lunch: MdOutlineLunchDining,
-  dinner: MdDinnerDining,
+  breakfast: mdIcons.MdOutlineBreakfastDining,
+  lunch: mdIcons.MdOutlineLunchDining,
+  dinner: mdIcons.MdDinnerDining,
 
   // 🍕 Popular Foods
-  pizza: FaPizzaSlice,
-  pizzaFull: GiFullPizza,
-  burger: FaHamburger,
-  hotdog: FaHotdog,
-  fries: GiFrenchFries,
-  sandwich: GiSandwich,
-  steak: GiSteak,
-  chicken: GiChickenOven,
-  sushi: GiSushis,
-  noodles: GiNoodles,
+  pizza: faIcons.FaPizzaSlice,
+  pizzaFull: giIcons.GiFullPizza,
+  burger: faIcons.FaHamburger,
+  hotdog: faIcons.FaHotdog,
+  fries: giIcons.GiFrenchFries,
+  sandwich: giIcons.GiSandwich,
+  steak: giIcons.GiSteak,
+  chicken: giIcons.GiChickenOven,
+  sushi: giIcons.GiSushis,
+  noodles: giIcons.GiNoodles,
 
   // 🍰 Desserts
-  cupcake: GiCupcake,
-  donut: GiDonut,
-  icecream: FaIceCream,
+  cupcake: giIcons.GiCupcake,
+  donut: giIcons.GiDonut,
+  icecream: faIcons.FaIceCream,
 
   // 🍎 Fruits
-  apple: FaAppleAlt,
-  banana: GiBanana,
-  strawberry: GiStrawberry,
-  watermelon: GiWatermelon,
-  orange: GiOrangeSlice,
-  grapes: GiGrapes,
-  fruitBowl: GiFruitBowl,
+  apple: faIcons.FaAppleAlt,
+  banana: giIcons.GiBanana,
+  strawberry: giIcons.GiStrawberry,
+  watermelon: giIcons.GiWatermelon,
+  orange: giIcons.GiOrangeSlice,
+  grapes: giIcons.GiGrapes,
+  fruitBowl: giIcons.GiFruitBowl,
 
   // 🥕 Ingredients
-  carrot: FaCarrot,
-  egg: FaEgg,
-  fish: FaFish,
-  cheese: GiCheeseWedge,
-  bread: GiBread,
-  milk: GiMilkCarton,
+  carrot: faIcons.FaCarrot,
+  egg: faIcons.FaEgg,
+  fish: faIcons.FaFish,
+  cheese: giIcons.GiCheeseWedge,
+  bread: giIcons.GiBread,
+  milk: giIcons.GiMilkCarton,
 
   // ☕ Drinks (GENERAL)
-  coffee: FaCoffee,
-  coffeeAlt: MdCoffee,
-  coffeeOutline: MdOutlineCoffee,
+  coffee: faIcons.FaCoffee,
+  coffeeAlt: mdIcons.MdCoffee,
+  coffeeOutline: mdIcons.MdOutlineCoffee,
 
-  coffeeHot: FaMugHot,
-  tea: MdLocalCafe,
-  beer: FaBeer,
-  drink: TbGlassFull,
-  bottle: TbBottle,
+  coffeeHot: faIcons.FaMugHot,
+  tea: mdIcons.MdLocalCafe,
+  beer: faIcons.FaBeer,
+  drink: tbIcons.TbGlassFull,
+  bottle: tbIcons.TbBottle,
 
   // ☕ Coffee (DETAILED)
-  coffeeBeans: GiCoffeeBeans,
-  coffeeBean: CiCoffeeBean,
+  coffeeBeans: giIcons.GiCoffeeBeans,
+  coffeeBean: ciIcons.CiCoffeeBean,
 
-  coffeeCup: CiCoffeeCup,
-  coffeeCupAlt: GiCoffeeCup,
-  coffeeMug: GiCoffeeMug,
+  coffeeCup: ciIcons.CiCoffeeCup,
+  coffeeCupAlt: giIcons.GiCoffeeCup,
+  coffeeMug: giIcons.GiCoffeeMug,
 
-  coffeeMaker: MdCoffeeMaker,
-  coffeeMachine: MdOutlineCoffeeMaker,
+  coffeeMaker: mdIcons.MdCoffeeMaker,
+  coffeeMachine: mdIcons.MdOutlineCoffeeMaker,
 
-  coffeeFi: FiCoffee,
-  coffeeLu: LuCoffee,
-  coffeeTi: TiCoffee,
+  coffeeFi: fiIcons.FiCoffee,
+  coffeeLu: luIcons.LuCoffee,
+  coffeeTi: tiIcons.TiCoffee,
 
   // 🍴 Utensils
-  utensils: GiKnifeFork,
-  spoon: GiSpoon,
-  forkSet: GiForkKnifeSpoon,
-  kitchenTools: TbToolsKitchen,
+  utensils: giIcons.GiKnifeFork,
+  spoon: giIcons.GiSpoon,
+  forkSet: giIcons.GiForkKnifeSpoon,
+  kitchenTools: tbIcons.TbToolsKitchen,
 
   // 🍳 Cooking
-  cooking: GiCookingPot,
-  stove: GiGasStove,
+  cooking: giIcons.GiCookingPot,
+  stove: giIcons.GiGasStove,
 };

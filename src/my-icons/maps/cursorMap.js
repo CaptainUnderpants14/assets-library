@@ -1,96 +1,58 @@
+import * as faIcons from "react-icons/fa";
+import * as mdIcons from "react-icons/md";
+import * as tbIcons from "react-icons/tb";
+import * as giIcons from "react-icons/gi";
+import * as aiIcons from "react-icons/ai";
+import * as ioIcons from "react-icons/io";
+
 // ================= IMPORTS =================
-import {
-  FaMousePointer,
-  FaHandPointer,
-  FaCrosshairs,
-  FaExpand,
-  FaCompress,
-} from "react-icons/fa";
-
-import {
-  MdMouse,
-  MdTouchApp,
-  MdOpenWith,
-  MdZoomIn,
-  MdZoomOut,
-  MdDragIndicator,
-  MdPanTool,
-} from "react-icons/md";
-
-import {
-  TbPointer,
-  TbHandFinger,
-  TbCursorText,
-  TbCursorOff,
-  TbArrowsMove,
-  TbArrowsHorizontal,
-  TbArrowsVertical,
-  TbResize,
-  TbZoomIn,
-  TbZoomOut,
-  TbDragDrop,
-} from "react-icons/tb";
-
-import {
-  GiArrowCursor,
-  GiClick,
-  GiGrab,
-} from "react-icons/gi";
-
-import {
-  AiOutlineDrag,
-  AiOutlineSelect,
-} from "react-icons/ai";
-
-import { IoIosResize, IoMdResize  } from "react-icons/io";
-
 // ================= MAP =================
 export const cursorIcons = {
   // ================= 🖱️ BASIC POINTER =================
-  pointer: FaMousePointer,
-  pointerAlt: TbPointer,
-  arrow: GiArrowCursor,
+  pointer: faIcons.FaMousePointer,
+  pointerAlt: tbIcons.TbPointer,
+  arrow: giIcons.GiArrowCursor,
 
   // ================= 👆 HAND / CLICK =================
-  hand: FaHandPointer,
-  handAlt: TbHandFinger,
-  click: GiClick,
-  tap: MdTouchApp,
-  mouse: MdMouse,
+  hand: faIcons.FaHandPointer,
+  handAlt: tbIcons.TbHandFinger,
+  click: giIcons.GiClick,
+  tap: mdIcons.MdTouchApp,
+  mouse: mdIcons.MdMouse,
 
   // ================= ✍️ TEXT =================
-  textCursorAlt: TbCursorText,
+  textCursorAlt: tbIcons.TbCursorText,
 
   // ================= 🎯 TARGET =================
-  crosshair: FaCrosshairs,
+  crosshair: faIcons.FaCrosshairs,
 
   // ================= 🔄 DRAG =================
-  drag: MdDragIndicator,
-  dragAlt: AiOutlineDrag,
-  dragMove: TbDragDrop,
-  grab: GiGrab,
-  move: MdOpenWith,
-  moveAlt: TbArrowsMove,
+  drag: mdIcons.MdDragIndicator,
+  dragAlt: aiIcons.AiOutlineDrag,
+  dragMove: tbIcons.TbDragDrop,
+  grab: giIcons.GiGrab,
+  move: mdIcons.MdOpenWith,
+  moveAlt: tbIcons.TbArrowsMove,
 
   // ================= ↔️ RESIZE =================
-  resize: TbResize,
-  resizeWidth: IoIosResize,
-  resizeHeight: IoMdResize,
-  horizontalResize: TbArrowsHorizontal,
-  verticalResize: TbArrowsVertical,
-  expand: FaExpand,
-  collapse: FaCompress,
+  resize: tbIcons.TbResize,
+  resizeWidth: ioIcons.IoIosResize,
+  resizeHeight: ioIcons.IoMdResize,
+  horizontalResize: tbIcons.TbArrowsHorizontal,
+  verticalResize: tbIcons.TbArrowsVertical,
+  expand: faIcons.FaExpand,
+  collapse: faIcons.FaCompress,
 
   // ================= 🔍 ZOOM =================
-  zoomIn: MdZoomIn,
-  zoomOut: MdZoomOut,
-  zoomInAlt: TbZoomIn,
-  zoomOutAlt: TbZoomOut,
+  zoomIn: mdIcons.MdZoomIn,
+  zoomOut: mdIcons.MdZoomOut,
+  zoomInAlt: tbIcons.TbZoomIn,
+  zoomOutAlt: tbIcons.TbZoomOut,
 
   // ================= ✋ INTERACTION =================
-  grabHand: MdPanTool,
-  select: AiOutlineSelect,
+  grabHand: mdIcons.MdPanTool,
+  select: aiIcons.AiOutlineSelect,
 
   // ================= 🚫 DISABLED =================
-  disabled: TbCursorOff,
+  disabled: tbIcons.TbCursorOff,
 };
