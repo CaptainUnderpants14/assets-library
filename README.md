@@ -1,13 +1,13 @@
-# assets-library
+# iconic
 
 Simple React icon library with grouped icons and a small `Icon` component API.
 
 ## Install
 
-If you are using the GitHub repo directly:
+using the GitHub repo directly:
 
 ```bash
-npm install github:CaptainUnderpants14/assets-library
+npm install github:CaptainUnderpants14/iconic
 ```
 
 ## Peer dependencies
@@ -21,13 +21,18 @@ npm install react react-dom
 ## Import
 
 ```jsx
-import { Icon } from "assets-library";
+import { Icon } from "iconic";
 ```
 
-## Basic usage
+## Basic usage (For those not using tailwind)
+
+General Usage looks like:
+<Icon group="group_name" name="icon_name" size*={icon_size} color*="color"/>
+* optional parameter
+
 
 ```jsx
-import { Icon } from "assets-library";
+import { Icon } from "iconic";
 
 export default function App() {
   return (
@@ -40,7 +45,7 @@ export default function App() {
 }
 ```
 
-## Using className format
+## Using className format(for tailwind users)
 
 You can also pass the icon through `className`:
 
@@ -82,15 +87,15 @@ You can also pass a number:
 <Icon group="business" name="chartLine" size={32} />
 ```
 
-## Props
+## Props (mix usage of tailwind inspired code with props)
 
 ```jsx
 <Icon
   group="business"
   name="chartLine"
   size="md"
-  color="currentColor"
-  className=""
+  color="red"
+  className="hover:text-"
 />
 ```
 
