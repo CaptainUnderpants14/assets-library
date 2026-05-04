@@ -62,7 +62,7 @@ Format:
 
 ```txt
 group_iconName
-group_iconName_*size
+group_iconName_size*
 ```
 
 Examples:
