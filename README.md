@@ -92,9 +92,7 @@ You can also pass a number:
 
 ## Props (Mix usage of tailwind inspired code with props)
 
-```text
 I encourage you to let tailwind handle the color property to avoid conflicts
-```
 
 ```jsx
 <Icon
