@@ -24,30 +24,6 @@ npm install react react-dom
 import { Icon } from "iconic";
 ```
 
-## Basic usage (For those not using tailwind)
-
-```txt
-General Usage looks like:
-<Icon group="group_name" name="icon_name" size*={icon_size} color*="color"/>
-* optional parameter
-```
-
-Example:
-
-```jsx
-import { Icon } from "iconic";
-
-export default function App() {
-  return (
-    <div>
-      <Icon group="business" name="chartLine" />
-      <Icon group="dev" name="react" size="lg" />
-      <Icon group="action" name="add" size={28} color="tomato" />
-    </div>
-  );
-}
-```
-
 ## Using className format (For tailwind users)
 
 You can also pass the icon through `className`:
@@ -71,6 +47,30 @@ Examples:
 business_chartLine
 business_chartLine_40
 dev_react_lg
+```
+
+## Basic usage (For those not using tailwind)
+
+```txt
+General Usage looks like:
+<Icon group="group_name" name="icon_name" size*={icon_size} color*="color"/>
+* optional parameter
+```
+
+Example:
+
+```jsx
+import { Icon } from "iconic";
+
+export default function App() {
+  return (
+    <div>
+      <Icon group="business" name="chartLine" />
+      <Icon group="dev" name="react" size="lg" />
+      <Icon group="action" name="add" size={28} color="tomato" />
+    </div>
+  );
+}
 ```
 
 ## Size options
@@ -108,3 +108,4 @@ I encourage you to let tailwind handle the color property to avoid conflicts
 - `group` and `name` work well for normal usage.
 - `className` format is useful when you want to combine icon selection with utility classes.
 - If an icon is not found, the component returns `null`.
+- This library is not a final product it still has App.jsx, index.css, main.jsx for testing purposes.
