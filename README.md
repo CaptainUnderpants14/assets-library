@@ -48,7 +48,7 @@ export default function App() {
 }
 ```
 
-## Using className format(for tailwind users)
+## Using className format (For tailwind users)
 
 You can also pass the icon through `className`:
 
@@ -62,7 +62,7 @@ Format:
 
 ```txt
 group_iconName
-group_iconName_size
+group_iconName_*size
 ```
 
 Examples:
@@ -90,14 +90,17 @@ You can also pass a number:
 <Icon group="business" name="chartLine" size={32} />
 ```
 
-## Props (mix usage of tailwind inspired code with props)
+## Props (Mix usage of tailwind inspired code with props)
+
+```text
+I encourage you to let talwind handle the color property to avoid conflicts
+```
 
 ```jsx
 <Icon
   group="business"
   name="chartLine"
   size="md"
-  color="red"
   className="hover:text-cyan-600"
 />
 ```
