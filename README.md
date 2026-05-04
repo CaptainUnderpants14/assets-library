@@ -1,6 +1,6 @@
 # iconic
 
-Simple React icon library with a small `Icon` component API.
+Simple React icon library with a small `Icon` component.
 
 ## Install
 
