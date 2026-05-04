@@ -93,7 +93,7 @@ You can also pass a number:
 ## Props (Mix usage of tailwind inspired code with props)
 
 ```text
-I encourage you to let talwind handle the color property to avoid conflicts
+I encourage you to let tailwind handle the color property to avoid conflicts
 ```
 
 ```jsx
@@ -101,7 +101,7 @@ I encourage you to let talwind handle the color property to avoid conflicts
   group="business"
   name="chartLine"
   size="md"
-  className="hover:text-cyan-600"
+  className="text-red-600 hover:text-cyan-600"
 />
 ```
 
